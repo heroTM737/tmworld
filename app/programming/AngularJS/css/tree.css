@@ -1,0 +1,23 @@
+.tree{
+    background-color: whitesmoke;
+    width: 300px;
+    margin: 15px;
+    text-decoration: none;
+    padding: 0px;
+}
+ul.tree li{
+    padding: 5px;
+    text-decoration: none;
+    list-style-type: none;
+}
+ul.tree li:hover{
+    background-color: #0088cc;
+    color: white;
+}
+ul.tree li i:hover{
+    cursor: pointer;
+    color: red;
+}
+.tree-tool{
+    padding: 0 15px;
+}

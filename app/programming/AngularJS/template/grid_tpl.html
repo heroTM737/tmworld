@@ -1,0 +1,38 @@
+<h1>Grid Example</h1>
+<br/>
+<div class="table_tool">
+    <button class="btn btn-primary" ng-click="toogleFilter()">{{filter_visible ? "Turn off filter" : "Turn on filter"}}</button>
+    <button class="btn btn-primary" ng-click="clearAllFilter()">Clear all filter</button>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th ng-repeat="h in col_defs" ng-click="sortColumn(h.field_name, $index)">
+                {{h.display_name}}
+                <span ng-if="h.apply_sort">
+                    <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-up':h.sort_direction, 'glyphicon-chevron-down':!h.sort_direction}"></i>
+                </span>
+            </th>
+        </tr>
+    </thead>
+    <tbody class="grid_tool" ng-if="filter_visible">
+        <tr>
+            <td ng-repeat="h in col_defs">
+                <input type="text" 
+                       placeholder="Filter {{h.display_name}}" 
+                       ng-init="filter_key= ''; filter_field = h.field_name"
+                       ng-model="filter_key" 
+                       ng-keyup="filterColumn(filter_key, filter_field)" 
+                       filter-name="{{h.field_name}}">
+                <i class="glyphicon glyphicon-remove" ng-click="removeFilter(h.field_name)"></i>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr ng-repeat="c in customerListFilter">
+            <td ng-repeat="h in col_defs">
+                <i class="glyphicon glyphicon-plus" ng-if="$index==0"></i> {{c[h.field_name]}}
+            </td>
+        </tr>
+    </tbody>
+</table>

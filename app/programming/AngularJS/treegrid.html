@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="shortcut icon" href="icon/tree.png">
+<title>Tree Grid page</title>
+
+<script src="lib/angular-1.4.3/angular.js"></script>
+<script src="../../../lib/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../../../lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="../../../lib/font-awesome-4.4.0/css/font-awesome.min.css">
+
+<script src="js/data.js"></script>
+<script src="controller/treeGridController.js"></script>
+<link rel="stylesheet" type="text/css" href="css/treegrid.css">
+
+
+<body>
+    <div ng-app="treegridApp">
+        <div ng-controller="treeGridController">
+            <treegrid-directive></treegrid-directive>
+        </div>
+    </div>
+</body>
+
+</html>

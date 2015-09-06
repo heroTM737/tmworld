@@ -1,0 +1,45 @@
+*{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.wellcometext {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 100px;
+    font-family: 'Tangerine', serif;
+}
+
+.fix-image {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    border-radius: 100%;
+}
+
+.fix-image img {
+    width: 30px;
+}
+
+.menu {
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.menu li {
+    padding: 5px;
+    cursor: pointer;
+    font-size: 30px;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.menu li:hover a{
+    color: rgba(128, 128, 128, 0.5);
+}

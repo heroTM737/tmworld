@@ -1,0 +1,51 @@
+<h1>Tree Grid Example</h1>
+<br/>
+<div class="tree-tool">
+    <button class="btn btn-primary" ng-click="toogleFilter()">{{filter_visible ? "Turn off filter" : "Turn on filter"}}</button>
+    <button class="btn btn-primary" ng-click="clearAllFilter()">Clear all filter</button>
+    <button class="btn btn-primary" ng-click="openAllBranch()">Expand All</button>
+    <button class="btn btn-primary" ng-click="closeAllBranch()">Collapse All</button>
+<!--    <input type="text" placeholder="Filter node name" ng-model="filterKeyName" ng-keyup="doFilterTree(filterKeyName)">-->
+</div>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th ng-repeat="h in col_defs">
+                {{h.display_name}}
+                <span ng-if="h.apply_sort">
+                    <i class="pull-right glyphicon" ng-class="{'glyphicon-chevron-up':h.sort_direction, 'glyphicon-chevron-down':!h.sort_direction}"></i>
+                </span>
+                <a class="pull-right button"><i class="fa fa-cog"></i></a>
+            </th>
+        </tr>
+    </thead>
+    <tbody class="grid_tool" ng-if="filter_visible">
+        <tr>
+            <td ng-repeat="h in col_defs">
+                <input type="text" 
+                       placeholder="Filter {{h.display_name}}" 
+                       ng-init="filter_key= ''; filter_name = h.field_name"
+                       ng-model="filter_key" 
+                       ng-keyup="filterColumn(filter_key, filter_name)" 
+                       filter-name="{{h.field_name}}">
+                <i class="glyphicon glyphicon-remove" ng-click="removeFilter(h.field_name)"></i>
+            </td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr class="arc-row" ng-repeat="node in nodeList" ng-if="node.isFilted">
+            <td ng-repeat="h in col_defs">
+                <span ng-if="$index == 0" style="padding-left: {{10 + node.depth*indent}}px">
+                    <span ng-if="node.children && node.children.length>0">
+                        <i class="fa fa-folder" ng-if="!node.expanded" ng-click="openBranch(node.directiveid)"></i>
+                        <i class="fa fa-folder-open" ng-if="node.expanded" ng-click="closeBranch(node.directiveid)"></i>
+                    </span>
+                    <span ng-if="node.children && node.children.length==0">
+                        <i class="fa fa-television"></i>
+                    </span>
+                </span>
+                {{node[h.field_name]}}
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<link rel="shortcut icon" href="icon/tree.png">
+<title>Grid page</title>
+<script src="lib/angular-1.4.3/angular.js"></script>
+<script src="lib/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+<link rel="shortcut icon" href="icon/tree.png">
+    
+<title>My Directive page</title>
+<script src="controller/myDirectiveController.js"></script>
+<script src="directive/myDirective.js"></script>
+
+<body>
+    <div ng-app="myDirective">
+        <div ng-controller="myDirectiveController">
+            <my-isolated-scope customers="customers" action="addCustomer()">
+                <i class="glyphicon glyphicon-plus"></i>
+                {{prop}}
+            </my-isolated-scope>
+        </div>
+    </div>
+
+</body>
+
+</html>

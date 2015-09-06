@@ -1,0 +1,23 @@
+<h1>Tree Example</h1>
+<br/>
+<div class="tree-tool">
+    <button class="btn btn-primary" ng-click="openAllBranch()">Expand All</button>
+    <button class="btn btn-primary" ng-click="closeAllBranch()">Collapse All</button>
+    <input type="text" placeholder="Filter node name" ng-model="filterKeyName" ng-keyup="doFilterTree(filterKeyName)">
+</div>
+<ul class="tree">
+    <li ng-repeat="node in nodeList" style="padding-left: {{10 + node.depth*indent}}px" ng-show="node.isShow()">
+        <span ng-if="node.children && node.children.length>0">
+            <i class="ng-class:openNodeIcon;" ng-show="!node.expanded" ng-click="openBranch(node.directiveid)"></i>
+            <i class="glyphicon glyphicon-minus" ng-show="node.expanded" ng-click="closeBranch(node.directiveid)"></i>
+        </span>
+        <span ng-if="node.children && node.children.length==0">
+            <i class="glyphicon glyphicon-leaf"></i>
+        </span> 
+        {{node.name}} --- {{node.isFilted}}
+    </li>
+</ul>
+<!--
+<i ng-class="{'glyphicon glyphicon-minus' : node.expanded,  'glyphicon glyphicon-plus' : !node.expanded}" 
+    ng-click="(node.expanded && closeBranch(node.directiveid)) || (!node.expanded && openBranch(node.directiveid))"></i>
+-->

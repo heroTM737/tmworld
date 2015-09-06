@@ -1,0 +1,56 @@
+table tbody {
+    border-top: 0px !important;
+}
+
+table tbody tr:hover {
+    background: rgba(226, 158, 231, 0.5);
+}
+
+table tbody.grid_tool tr:hover {
+    background: none;
+}
+
+table thead tr {
+    background: #ececec;
+}
+
+table thead tr th {
+    border-bottom: 0px !important;
+    width: 300px;
+}
+
+table tbody tr td {
+    border-top: 0px !important;
+    border-bottom: 1px solid #ddd !important;
+}
+
+input[type="text"] {
+    border: none;
+    background: pink;
+    padding: 3px 5px;
+}
+
+input[type="text"]:focus {
+    outline: 0px;
+}
+
+.grid_tool tr td {
+    padding: 0px !important;
+    border-top: 0px !important;
+}
+
+.grid_tool tr td input[type="text"] {
+    width: 75%;
+}
+
+.grid_tool tr td span {
+    cursor: pointer;
+}
+
+.grid_tool tr td span:hover {
+    color: red;
+}
+
+.table_tool {
+    padding: 5px;
+}

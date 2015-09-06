@@ -1,0 +1,23 @@
+<div>
+    <button ng-click="action()">Click me to add more customer</button>
+    <button ng-click="addMyCustomer()">Click me to add more customer</button>
+</div>
+<div>
+    Customer list:
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Street</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="customer in customers">
+            <td  ng-repeat="prop in customer">
+                <ng-transclude></ng-transclude>
+            </td>
+        </tr>
+    </tbody>
+</table>
