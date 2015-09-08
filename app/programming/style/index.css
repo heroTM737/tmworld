@@ -1,24 +1,41 @@
 body {
-    background-image: url(friendship.jpg); 
+    background-image: url(../../../image/background/honeycomb-bg.jpg);
 }
 
 * {
     color: rgba(255, 255, 255, 0.5);
 }
 
-#background {
-    position: relative;
+.wellcometext {
+    text-align: center;
+    padding-top: 150px;
+    font-size: 100px;
+    font-family: 'Tangerine', serif;
 }
 
-.bgs {
-    position: absolute;
+.menu {
+    max-width: 660px;
+    margin: 0 auto;
+    background: black;
+    overflow: hidden;
+    margin-top: 150px;
 }
 
-#content{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(255,255,255,0.5);
-    width: 100%;
-    min-height: 500px;
+.menu li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 5px;
+    
+}
+
+.menu li a{
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.menu li img {
+    max-width: 70px;
+    max-height: 70px;
 }
