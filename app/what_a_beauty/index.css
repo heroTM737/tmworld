@@ -1,9 +1,12 @@
+body{
+    background: black;
+}
 .showcase {
     height: 500px;
 }
 
 .menu {
-/*    border-top: 1px solid black;*/
+    margin-top: 5px;
 }
 
 .menu .tab {
@@ -11,14 +14,16 @@
 }
 
 .menu .tab .tab-title {
-    width: 70px;
+/*    width: 70px;*/
     height: 70px;
     line-height: 70px;
+    padding: 10px;
+    margin: 5px;
     text-align: center;
+    overflow: hidden;
     background: pink;
     position: relative;
     cursor: pointer;
-    
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000;
@@ -33,7 +38,10 @@
     display: none;
 }
 
-img {
-    max-width: 300px;
-    max-height: 300px;
+.single-image {
+    text-align: center;
+}
+
+.single-image img {
+    max-height: 500px;
 }
