@@ -1,16 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
 body {
     background-image: url(../../../image/background/honeycomb-bg.jpg);
 }
 
 * {
     color: rgba(255, 255, 255, 0.5);
+    font-family: 'Open Sans', sans-serif !important;
 }
 
 .wellcometext {
     text-align: center;
     padding-top: 150px;
-    font-size: 100px;
-    font-family: 'Tangerine', serif;
+    font-size: 80px;
 }
 
 .menu {
