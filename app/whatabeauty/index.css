@@ -1,0 +1,39 @@
+.showcase {
+    height: 500px;
+}
+
+.menu {
+/*    border-top: 1px solid black;*/
+}
+
+.menu .tab {
+    float: left;
+}
+
+.menu .tab .tab-title {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    background: pink;
+    position: relative;
+    cursor: pointer;
+    
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.menu .tab .tab-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    display: none;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+}
