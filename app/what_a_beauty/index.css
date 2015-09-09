@@ -1,6 +1,8 @@
-body{
+@import url(../../css/font.css);
+body {
     background: black;
 }
+
 .showcase {
     height: 500px;
 }
@@ -14,19 +16,43 @@ body{
 }
 
 .menu .tab .tab-title {
-/*    width: 70px;*/
+    min-width: 70px;
     height: 70px;
     line-height: 70px;
     padding: 10px;
-    margin: 5px;
+    /*    margin: 5px;*/
+    
     text-align: center;
     overflow: hidden;
-    background: pink;
+    background: url(dota2/dota2icon_32x32.png) no-repeat 50% 100%;
+    background-color: pink;
     position: relative;
     cursor: pointer;
     -moz-box-shadow: inset 0 0 10px #000000;
     -webkit-box-shadow: inset 0 0 10px #000000;
     box-shadow: inset 0 0 10px #000000;
+}
+
+.menu .tab .tab-title .tab-title-name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    line-height: 90px;
+    background: rgba(255, 255, 255, 0.9);
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif !important;
+    color: red;
+    display: none;
+}
+
+.menu .tab .tab-title:hover .tab-title-name {
+    display: block;
+}
+
+.menu .tab .tab-title img {
+    height: 70px;
 }
 
 .menu .tab .tab-content {
@@ -38,10 +64,10 @@ body{
     display: none;
 }
 
-.single-image {
+.menu .tab .tab-content .single-image {
     text-align: center;
 }
 
-.single-image img {
+.menu .tab .tab-content .single-image img {
     max-height: 500px;
 }

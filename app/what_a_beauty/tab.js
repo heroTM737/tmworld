@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
     //create default data
-    var list = ["dota2_1", "juggernaut_1", "juggernaut_2", "juggernaut_3", "juggernaut_4", "lina_1", "razor_1", "traxex_1"];
+    var list = ["dota2_1", "juggernaut_1", "juggernaut_2", "juggernaut_3", "juggernaut_4", "lina_1", "razor_1", "drowranger_1"];
     
     var template = $(".menu").html();
     
@@ -10,8 +10,9 @@ $(document).ready(function () {
     
     for (var i in list){
         var current = template.slice(0);
-        current = current.replace("nameputhere", list[i]);
-        current = current.replace("nameputhere", list[i]);
+        while (current.indexOf("nameputhere") >= 0){
+            current = current.replace("nameputhere", list[i]);
+        }
         $(".menu").append(current);
     }
     
