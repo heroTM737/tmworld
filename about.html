@@ -1,35 +1,81 @@
 <html>
 
 <head>
-    <title>TM's World</title>
-    <link rel="shortcut icon" href="image/logo/green_earth_32x32.png" />
+    <title>About TM</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="image/about/chicken.png" />
 
     <!--common-->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/font.css">
 
     <!--library-->
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="lib/jquery-ui-1.11.4/jquery-ui.min.js"></script>
     <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.4.0/css/font-awesome.min.css">
 
     <!--page specific-->
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+    <script src="js/about.js"></script>
 </head>
 
 <body>
-    <div class="wellcometext">
-        Wellcome to TM's World
-    </div>
     <div class="menu">
+        <div class="menu-hamburger" onclick="toogleMenu()"></div>
         <ul>
-            <li style="left: -75px;"><a href="app/programming/AngularJS/index.html" rel="_blank">Programming</a></li>
-            <li style="left: -25px;">Smart Product</li>
-            <li style="left: 25px;">What a beauty</li>
-            <li style="left: 75px;">About TM</li>
+            <li onclick="scrollToID('id_cover')">cover</li>
+            <li onclick="scrollToID('id_contact')">contact</li>
+            <li onclick="scrollToID('id_archivements')">archivement</li>
+            <li onclick="scrollToID('id_hobbies')">hoobies</li>
         </ul>
     </div>
-    <div class="fix-image">
-        <a href=""><img src="image/darts_type1_red_50.png" title="" class="fa-spin"/></a>
+    <div class="wrapper">
+        <div class="content">
+            <div class="box" id="id_cover">
+                <div class="box-title"></div>
+                <div class="box-content">
+                    <img src="image/about/wave_dolphin.jpg" onError="this.src='image/about/nature.jpg';" />
+                </div>
+            </div>
+            <div class="box" id="id_contact">
+                <div class="box-title">Contact</div>
+                <div class="box-content icon-list">
+                    <ul>
+                        <li><a href=""><i class="fa fa-envelope"></i>xuantien.nguyen93@gmail.com</a></li>
+                        <li><a href=""><i class="fa fa-envelope"></i>tiennx1@fsoft.com</a></li>
+                        <li><a href=""><i class="fa fa-mobile"></i>+84989166823</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box" id="id_archivements">
+                <div class="box-title">Archivements</div>
+                <div class="box-content icon-list">
+                    <ul>
+                        <li><a href=""><img src="image/golden_cup_32x32.png">2013 Consolation prizes at ACM PTIT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box" id="id_hobbies">
+                <div class="box-title">Hobbies</div>
+                <div class="box-content icon-list">
+                    <ul>
+                        <li><a href=""><img src="app/what_a_beauty/dota2/dota2icon_32x32.png">Dota 2</a></li>
+                        <li><a href=""><img src="image/CS_GO_32x32.png">Counter-Strike</a></li>
+                        <li><a href=""><img src="image/cod_ghost_32x32.png">Call of Duty</a></li>
+                        <li><a href=""><img src="image/diablo_32x32.jpg">Diablo</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="box" id=""></div>
+            <div class="box" id=""></div>
+            <div class="box" id=""></div>
+            <div class="box" id=""></div>
+            <div class="box" id=""></div>
+            <div class="box" id=""></div>
+        </div>
     </div>
+
 </body>
 
 </html>

@@ -1,0 +1,120 @@
+body {
+    background-color: #f6f6f6;
+}
+
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.about-header {
+    background: url(../image/about/nature.jpg);
+    background-size: 100% auto;
+    background-color: white;
+    background-blend-mode: multiply;
+    min-height: 500px;
+    /*    opacity: 0.5;*/
+}
+
+.about-info {
+    min-height: 300px;
+    position: relative;
+}
+
+.about-info table tr td {
+    vertical-align: top;
+    padding: 3px 5px;
+}
+
+.about-info table tr td:first-child {
+    font-weight: bold;
+}
+
+.about-info .myimage {
+    width: 170px;
+    border-radius: 100%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.cv-box {}
+
+.cv-box-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    font: bold 20px Verdana;
+}
+
+#education .cv-box-content {
+    padding: 15px 0;
+}
+
+#education .cv-box-content div {
+    margin: 10px 0;
+    padding: 3px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.13), 0px -1px 3px rgba(0, 0, 0, 0.16);
+    transition: 0.5s;
+}
+
+#education .cv-box-content div:hover {
+    background-color: burlywood;
+}
+
+#education .cv-box-content div span {
+    font-size: 14px;
+}
+
+#education .cv-box-content div span:first-child {
+    float: left;
+}
+
+#education .cv-box-content div span:nth-child(2) {
+    margin-left: 100px;
+    display: block;
+}
+
+#workingexperiences .cv-box-content {
+    position: relative;
+    min-height: 300px;
+}
+
+#workingexperiences .cv-box-content:after {
+    content: "";
+    width: 1px;
+    height: 100%;
+    background-color: chocolate;
+    position: absolute;
+    top: 0;
+    left: 150px;
+}
+
+#workingexperiences .time-event {
+    position: relative;
+    margin: 5px 0;
+}
+
+#workingexperiences .time-event:after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 100%;
+    background-color: chocolate;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 147px;
+}
+
+#workingexperiences .time-event .time-year {
+    float: left;
+    width: 140px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+#workingexperiences .time-event .time-location {
+    margin-left: 150px;
+    padding-left: 15px;
+}

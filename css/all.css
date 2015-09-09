@@ -1,5 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Tangerine);
-
 body {
     background: url(../image/background/honeycomb-bg.jpg);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: burlywood;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
 }

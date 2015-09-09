@@ -1,0 +1,83 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.menu ul li {
+    cursor: pointer;
+    background: pink;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    width: 100px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: none;
+}
+
+.menu .menu-hamburger{
+    background: red;
+    margin: 5px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.wrapper {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.box {
+    margin: 0 0 10px 0;
+}
+
+.box .box-title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif !important;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.box .box-content {
+    /*    text-align: center;*/
+    
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#id_cover {
+    max-height: 500px;
+}
+
+#id_cover img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+.icon-list ul li {
+    padding: 5px;
+    height: 32px;
+}
+
+.icon-list img{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.icon-list i{
+    display: block;
+    float: left;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    font-size: 20px;
+    text-align: center;
+}
+.icon-list fa{
+    background: red;
+}
