@@ -2,6 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
 }
 
 .menu ul li {
@@ -28,9 +29,11 @@
     opacity: 0.5;
     margin: 5px;
     padding: 5px;
-    width: 30px;
+    max-width: 30px;
+    width: 20%;
     height: 30px;
     border-radius: 100%;
+    cursor: pointer;
     position: absolute;
     top: 5px;
     left: 5px;
@@ -58,8 +61,9 @@
 
 .box .box-content {
     background-color: rgba(255, 255, 255, 0.5);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border-radius: 5px;
+/*    border-bottom-left-radius: 5px;*/
+/*    border-bottom-right-radius: 5px;*/
 }
 
 #id_cover {
