@@ -7,9 +7,9 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: burlywood;
+    background: white;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: white;
+    background: burlywood;
 }

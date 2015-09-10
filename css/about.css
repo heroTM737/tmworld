@@ -6,7 +6,8 @@
 
 .menu ul li {
     cursor: pointer;
-    background: pink;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
@@ -15,14 +16,20 @@
     top: 5px;
     left: 5px;
     display: none;
+    color: white;
 }
 
-.menu .menu-hamburger{
-    background: red;
+.menu ul li:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.menu .menu-hamburger {
+    background: white;
+    opacity: 0.5;
     margin: 5px;
     padding: 5px;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     border-radius: 100%;
     position: absolute;
     top: 5px;
@@ -30,12 +37,15 @@
 }
 
 .wrapper {
-    max-width: 700px;
+    width: 100%;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
 .box {
-    margin: 0 0 10px 0;
+    margin: 0 0 30px 0;
+    /*    border: 2px solid rgba(255, 255, 255, 0.5);*/
+    /*    border-radius: 5px;*/
 }
 
 .box .box-title {
@@ -43,16 +53,22 @@
     font-family: 'Open Sans', sans-serif !important;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.5);
+    padding: 5px;
 }
 
 .box .box-content {
-    /*    text-align: center;*/
-    
     background-color: rgba(255, 255, 255, 0.5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 #id_cover {
     max-height: 500px;
+    text-align: center;
+}
+
+#id_cover .box-content {
+    background: none !important;
 }
 
 #id_cover img {
@@ -65,11 +81,12 @@
     height: 32px;
 }
 
-.icon-list img{
+.icon-list img {
     vertical-align: middle;
     margin-right: 5px;
 }
-.icon-list i{
+
+.icon-list i {
     display: block;
     float: left;
     vertical-align: middle;
@@ -78,6 +95,35 @@
     font-size: 20px;
     text-align: center;
 }
-.icon-list fa{
+
+.icon-list fa {
     background: red;
+}
+
+.app_code {
+    background: pink;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.app_code input,
+.app_code button {
+    float: right;
+    background: none;
+}
+
+.app_code input {
+    border: none;
+    outline: none;
+    height: 20px;
+}
+
+.app_code button {
+    border: none;
+    outline: none;
+    width: 20px;
+    height: 20px;
 }
