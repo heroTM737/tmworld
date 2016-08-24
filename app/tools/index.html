@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!-- jquery -->
+    <link rel="stylesheet" type="text/css" href="../../lib/tm/tm.css">
+
+    <!-- jquery -->
+    <script src="../../lib/jquery/jquery-3.1.0.min.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="../../lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- default -->
+    <script src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="box-list">
+        <div class="box">
+            <div class="box-header box-title">RGB - Hex conversion</div>
+            <div class="box-body">
+                <div class="row">
+                    <div class="col-lg-5">
+                        <div>
+                            <div class="row">
+                                <div class="col-lg-4">red</div>
+                                <div class="col-lg-8">
+                                    <input id="red" type="text" placeholder="red" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">green</div>
+                                <div class="col-lg-8">
+                                    <input id="green" type="text" placeholder="green" />
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4">blue</div>
+                                <div class="col-lg-8">
+                                    <input id="blue" type="text" placeholder="blue" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2">
+                        <div>
+                            <button onclick="convertRGB2Hex()"> rgb2hex =&gt </button>
+                        </div>
+                        <div>
+                            <button onclick="convertHex2RGB()"> &lt= hex2rgb </button>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div>hex</div>
+                        <div>
+                            <label style="width:5px">#</label>
+                            <input id="hex" type="text" placeholder="hex" />
+                        </div>
+                        <div>
+                            <input id="hexSharp" type="text" placeholder="hex with sharp" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-header box-title">HTML Template</div>
+            <div class="box-body">
+                <xmp>
+                    <!DOCTYPE html>
+                    <html>
+
+                    <head>
+                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+                        <!-- style -->
+                        <link rel="stylesheet" type="text/css" href="index.css">
+
+                        <!-- javascript -->
+                        <script src="index.js"></script>
+                    </head>
+
+                    <body>
+                        <div></div>
+                    </body>
+
+                    </html>
+                </xmp>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

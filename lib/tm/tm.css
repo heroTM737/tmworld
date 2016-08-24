@@ -1,0 +1,22 @@
+.box-list {}
+
+.box-list .box {
+    margin: 5px;
+}
+
+.box {
+    border: 1px solid pink;
+}
+
+.box-header {
+    padding: 5px;
+    border-bottom: 1px solid pink;
+}
+
+.box-title {
+    font-weight: bold;
+}
+
+.box-body {
+    padding: 5px;
+}
