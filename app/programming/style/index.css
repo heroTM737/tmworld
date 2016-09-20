@@ -20,6 +20,8 @@ body {
     margin: 0 auto;
     overflow: hidden;
     margin-top: 150px;
+    display: flex;
+    justify-content: center;
 }
 
 .menu li {
