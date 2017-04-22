@@ -1,0 +1,31 @@
+.Tabs ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0px;
+    margin: 0px;
+    background: pink;
+}
+
+.Tabs ul li {
+    cursor: pointer;
+    list-style-type: none;
+    padding: 3px 20px;
+    text-transform: uppercase;
+    font-family: cursive;
+}
+
+.Tabs ul li:hover {
+    background: yellow;
+}
+
+.Tabs ul li.active {
+    position: relative;
+    background: yellow;
+    color: blue;
+    font-weight: bold;
+}
+
+.Tabs .TabsBody {
+    padding-top: 5px;
+    border-top: 1px solid #fff;
+}
