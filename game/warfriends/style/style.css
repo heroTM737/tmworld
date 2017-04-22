@@ -16,7 +16,7 @@ table {
 
 table th {
     text-align: left;
-    width: 100px;
+    min-width: 100px;
     padding: 5px;
 }
 table tr td {
