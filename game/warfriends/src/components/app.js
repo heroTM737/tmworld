@@ -28,14 +28,16 @@ export default class App extends Component {
         <Tab key={key} title={key}><Table data={data} /></Tab>
       );
     }
-    
+
     return result;
   }
 
   render() {
     return (
       <div>
-        <div>Warfriends by Chillingo</div>
+        <div className="header">
+          <img src="image/favicon.png" />
+          Warfriends by Chillingo</div>
         {this.loopFn(WarfriendsData, "app")}
       </div>
     );

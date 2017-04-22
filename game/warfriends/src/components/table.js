@@ -14,21 +14,21 @@ export default class Table extends Component {
             children.push(
                 <tr key={i}>
                     <td>{i}</td>
-                    <td>{data[i].price}</td>
-                    <td>{data[i].price_type}</td>
+                    <td>{data[i].price_type == "gold" ? null : data[i].price}</td>
+                    <td>{data[i].price_type == "gold" ? data[i].price : null}</td>
                     <td>{data[i].level}</td>
                 </tr>
             );
         }
 
         return (
-            <table>
+            <table cellSpacing="0" cellPadding="0">
                 <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Price</th>
-                        <th>Price type</th>
-                        <th>Level</th>
+                        <th>Warbucks</th>
+                        <th>Gold</th>
+                        <th>Rank</th>
                     </tr>
                 </thead>
                 <tbody>
