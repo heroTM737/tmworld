@@ -16,16 +16,28 @@ table {
 
 table th {
     text-align: left;
-    min-width: 100px;
     padding: 5px;
 }
+
+table th:nth-child(2) {
+     width: 100px;
+}
+
 table tr td {
     margin: 0;
     padding: 5px;
+    min-width: 50px;
 }
-table tbody tr:hover {
-    background: pink;
-}
+
 table tbody tr:nth-child(odd) {
-    background: #b5a6ec;
+    background: rgba(181, 166, 236, 0.5);
+}
+
+table tbody tr:hover {
+    background: blue;
+    color: white;
+}
+
+table img {
+    height: 20px;
 }

@@ -575,7 +575,7 @@ var warfriends = {
             max_damage: 0
         },
         infantry: {
-            price: 0,
+            price: 1500,
             price_type: "warbucks",
             level: 1,
             min_health: 0,
@@ -585,7 +585,7 @@ var warfriends = {
             max_damage: 0
         },
         snipersoldier: {
-            price: 0,
+            price: 19999,
             price_type: "warbucks",
             level: 1,
             min_health: 0,
@@ -715,7 +715,7 @@ var warfriends = {
             max_damage: 0
         },
         flamethrower: {
-            price: 7924999,
+            price: 2499,
             price_type: "gold",
             level: 30,
             min_health: 0,
