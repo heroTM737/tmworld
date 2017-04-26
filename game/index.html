@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>For Gamer by TM</title>
+    <link rel="shortcut icon" href="../image/logo/anchor_blue_32x32.png" />
+
+    <!--common-->
+    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <script src="../lib/jquery/jquery-3.2.1.min.js"></script>
+
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+        
+        .container img {
+            position: fixed;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            box-shadow: -4px 0px 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <a href="dota2/"><img src="../image/game/dota2.jpg" /></a>
+        <a href="warfriends/"><img src="../image/game/warfriends.jpg" /></a>
+    </div>
+    <script>
+    $(document).ready(function(){
+        var selected = $(".container a img");
+        var margin = $(window).width() / selected.length;
+        selected.each(function(index, value){
+            $(value).css("left", (index * margin) + "px");
+        });
+    });
+    </script>
+</body>
+
+</html>

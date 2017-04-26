@@ -10,10 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/all.css">
 
     <!--library-->
-    <link rel="stylesheet" type="text/css" href="lib/font-awesome-4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--page specific-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+
+    <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 </head>
 
 <body>
@@ -22,16 +24,26 @@
     </div>
     <div class="menu">
         <ul>
-            <li style="left: -75px;"><a href="app/programming" target="_blank">Programming</a></li>
-            <li style="left: -25px;"><a href="" target="_blank">Smart Product</a></li>
-            <li style="left: 25px;"><a href="app/what_a_beauty" target="_blank">What a beauty</a></li>
-            <li style="left: 75px;"><a href="app/tools" target="_blank">TM's Tools</a></li>
-            <li style="left: 125px;"><a href="about.html" target="_blank">About TM</a></li>
+            <li><a href="app/programming" target="_blank">Programming</a></li>
+            <li><a href="game/" target="_blank">Game</a></li>
+            <li><a href="app/what_a_beauty" target="_blank">What a beauty</a></li>
+            <li><a href="app/tools" target="_blank">Tools</a></li>
+            <li><a href="about.html" target="_blank">About TM</a></li>
         </ul>
     </div>
     <div class="fix-image">
         <a href=""><img src="image/darts_type1_red_50.png" title="" class="fa-spin" /></a>
     </div>
+    <script>
+    $(document).ready(function(){
+        var selected = $(".menu ul li");
+        var dif = 50;
+        var left = -dif * (selected.length - 1) / 2;
+        selected.each(function(index, value){
+            $(value).css("left", (left + dif * index) + "px");
+        });
+    });
+    </script>
 </body>
 
 </html>
