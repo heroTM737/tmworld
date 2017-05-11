@@ -235,7 +235,7 @@ var warfriends = {
                     price_type: "warbucks",
                     level: 18,
                     min_damage: 292.7,
-                    max_damage: 0,
+                    max_damage: 421.1,
                     accuracy: 100,
                     rate_of_fire: 30,
                     shot_speed: 80
