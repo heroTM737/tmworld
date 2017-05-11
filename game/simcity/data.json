@@ -1,0 +1,142 @@
+[
+    {
+        "name": "Metal",
+        "time": "1m",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Minerals",
+        "time": "30m",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Seeds",
+        "time": "20m",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Wood",
+        "time": "3m",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Texttiles",
+        "time": "3h",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Chemicals",
+        "time": "2h",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Plastics",
+        "time": "9m",
+        "where": "factory",
+        "require": {}
+    },
+    {
+        "name": "Vegetables",
+        "time": "20m",
+        "where": "Farmer's Market",
+        "require": {
+            "Seeds": 2
+        }
+    },
+    {
+        "name": "Hammer",
+        "time": "14m",
+        "where": "Hardware Store",
+        "require": {
+            "Metal": 1,
+            "Wood": 1
+        }
+    },
+    {
+        "name": "Measuring Tape",
+        "time": "20m",
+        "where": "Hardware Store",
+        "require": {
+            "Metal": 1,
+            "Plastics": 1
+        }
+    },
+    {
+        "name": "Shovel",
+        "time": "30m",
+        "where": "Hardware Store",
+        "require": {
+            "Metal": 1,
+            "Wood": 1,
+            "Plastics": 1
+        }
+    },
+    {
+        "name": "Nails",
+        "time": "5m",
+        "where": "Building Supplies Store",
+        "require": {
+            "Metal": 2
+        }
+    },
+    {
+        "name": "Planks",
+        "time": "30m",
+        "where": "Building Supplies Store",
+        "require": {
+            "Wood": 2
+        }
+    },
+    {
+        "name": "Bricks",
+        "time": "20m",
+        "where": "Building Supplies Store",
+        "require": {
+            "Minerals": 2
+        }
+    },
+    {
+        "name": "Cement",
+        "time": "50m",
+        "where": "Building Supplies Store",
+        "require": {
+            "Minerals": 2,
+            "Chemicals": 1
+        }
+    },
+    {
+        "name": "Glue",
+        "time": "1h",
+        "where": "Building Supplies Store",
+        "require": {
+            "Plastics": 2,
+            "Chemicals": 1,
+        }
+    },
+    {
+        "name": "Chairs",
+        "time": "20m",
+        "where": "Funiture Store",
+        "require": {
+            "Wood": 2,
+            "Nails": 1,
+            "Hammer": 1
+        }
+    },
+    {
+        "name": "Tables",
+        "time": "30m",
+        "where": "Funiture Store",
+        "require": {
+            "Planks": 1,
+            "Nails": 2,
+            "Hammer": 1
+        }
+    }
+]
