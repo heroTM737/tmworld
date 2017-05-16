@@ -10,7 +10,9 @@ let bot = [
     "voreric",
     "MiniMaxi9",
     "LittleBunny",
-    "dontshootme"
+    "dontshootme",
+    "Agraswen",
+    "<3 nice vet €>"
 ];
 
 let noob = [
@@ -28,12 +30,14 @@ let noob = [
     "bokchoy",
 	"Nico Khosasie",
     "Tú047",
-    "KynDigg"
+    "KynDigg",
+    "TORUMU"
 ];
 
 let ignore = [
-    "vvip",
-    "dragon"
+    "VVIP",
+    "Dragon",
+    "AUSY_D"
 ];
 
 export default {bot, noob, ignore};
