@@ -8,7 +8,8 @@ let bot = [
     "r3tr0",
     "waodith",
     "voreric",
-    "MiniMaxi9"
+    "MiniMaxi9",
+    "LittleBunny"
 ];
 
 let noob = [
