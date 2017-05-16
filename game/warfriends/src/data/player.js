@@ -9,14 +9,15 @@ let bot = [
     "waodith",
     "voreric",
     "MiniMaxi9",
-    "LittleBunny"
+    "LittleBunny",
+    "dontshootme"
 ];
 
 let noob = [
     "iris",
     "t_jack",
     "S.W.A.T",
-    "Amakura66",
+    "Amakuza66",
     "warfriends392139",
     "eri",
     "samichan",
@@ -24,7 +25,8 @@ let noob = [
     "joekiller",
     "torumu",
     "ph1je",
-    "bokchoy"
+    "bokchoy",
+	"Nico Khosasie"
 ];
 
 let ignore = [

@@ -7,6 +7,9 @@ import StatsData from '../data/stats';
 import PlayerTable from './PlayerTable';
 import PlayerData from '../data/player';
 
+import QuestTable from './QuestTable';
+import QuestData from '../data/quest';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +42,7 @@ export default class App extends Component {
   render() {
     let statsTab = this.loopFn(StatsData, "app");
     let playerTab = (<PlayerTable data={PlayerData} />);
-    let questTab = (<div>Quest tab</div>);
+    let questTab = (<QuestTable data={QuestData} />);
 
     return (
       <div>
@@ -50,7 +53,7 @@ export default class App extends Component {
         <Tabs>
           <Tab title="Stats">{statsTab}</Tab>
           <Tab title="Player">{playerTab}</Tab>
-          <Tab title="Quest">{playerTab}</Tab>
+          <Tab title="Quest">{questTab}</Tab>
         </Tabs>
       </div>
     );
