@@ -5,6 +5,19 @@ function formatCurrency(n) {
     return n.toFixed(2).replace(/(\d)(?=(\d{3})+\.)/g, "$1,").split(".")[0];
 }
 
+const Image = ({src, fallbackSrc, ...other}) => {
+    let element;
+    const changeSrc = newSrc => {
+        element.src = newSrc;
+    };
+    return (
+        <img src={src}
+            onError={() => changeSrc(fallbackSrc)}
+            ref={el => element = el}
+            {...other} />
+    );
+};
+
 export default class Table extends Component {
     constructor(props) {
         super(props);
@@ -20,7 +33,9 @@ export default class Table extends Component {
             var price = formatCurrency(data[i].price);
             children.push(
                 <tr key={i}>
-                    <td><img src={"image/" + (isArmy ? "army" : "weapon") + "/" + i + ".png"} /></td>
+                    <td>
+                        <Image src={"image/" + (isArmy ? "army" : "weapon") + "/" + i + ".png"} fallbackSrc="image/favicon.png" />
+                    </td>
                     <td>{i}</td>
                     <td>{data[i].price_type == "gold" ? null : price}</td>
                     <td>{data[i].price_type == "gold" ? price : null}</td>
