@@ -41,8 +41,8 @@ export default class PlayerTable extends Component {
             let type = data[i].type;
             if (keyword == "" || name.includes(keyword)) {
                 players.push(
-                    <tr key={name}>
-                        <td>{name}</td>
+                    <tr key={i}>
+                        <td>{data[i].name}</td>
                         <td>{type}</td>
                     </tr>
                 );

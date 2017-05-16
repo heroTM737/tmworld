@@ -26,7 +26,9 @@ let noob = [
     "torumu",
     "ph1je",
     "bokchoy",
-	"Nico Khosasie"
+	"Nico Khosasie",
+    "Tú047",
+    "KynDigg"
 ];
 
 let ignore = [
