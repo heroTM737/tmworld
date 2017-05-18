@@ -41,10 +41,10 @@ export default class PlayerTable extends Component {
             let type = data[i].type;
             if (keyword == "" || name.includes(keyword)) {
                 players.push(
-                    <tr key={i}>
-                        <td>{data[i].name}</td>
-                        <td>{type}</td>
-                    </tr>
+                    <div key={i} className="PlayerTableEntry">
+                        <div className="PlayerTableEntryType">{type}</div>
+                        <div className="PlayerTableEntryName">{data[i].name}</div>
+                    </div>
                 );
             }
         }
@@ -54,18 +54,8 @@ export default class PlayerTable extends Component {
                 <div>
                     <input type="text" placeholder="player name" onChange={this.onKeyworkChange} value={this.state.keyword} />
                 </div>
-                <div>
-                    <table cellSpacing="0" cellPadding="0">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {players}
-                        </tbody>
-                    </table>
+                <div className="PlayerTable">
+                    {players}
                 </div>
             </div>
         );
