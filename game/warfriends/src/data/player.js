@@ -40,7 +40,8 @@ let noob = [
     "Fu-Hsiung Tsao",
     "BigFriend9394",
     "MovesLikeDodger",
-    "HK Law"
+    "HK Law",
+    "devil181818"
 ];
 
 let ignore = [
