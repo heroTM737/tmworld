@@ -17,7 +17,10 @@ let bot = [
     "$greedy_mayor$",
     "44Willson44",
     "retri_HANGman",
-    "CKND-CPI"
+    "CKND-CPI",
+    "GuardOfTheBody",
+    "afilillan",
+    "Yoalia"
 ];
 
 let noob = [
