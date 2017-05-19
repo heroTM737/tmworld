@@ -13,7 +13,11 @@ let bot = [
     "dontshootme",
     "Agraswen",
     "<3 nice vet €>",
-    "gameWISE"
+    "gameWISE",
+    "$greedy_mayor$",
+    "44Willson44",
+    "retri_HANGman",
+    "CKND-CPI"
 ];
 
 let noob = [
@@ -34,7 +38,8 @@ let noob = [
     "KynDigg",
     "TORUMU",
     "BigFriend9394",
-    "MovesLikeDodger"
+    "MovesLikeDodger",
+    "HK Law"
 ];
 
 let ignore = [
