@@ -37,6 +37,7 @@ let noob = [
     "Tú047",
     "KynDigg",
     "TORUMU",
+    "Fu-Hsiung Tsao",
     "BigFriend9394",
     "MovesLikeDodger",
     "HK Law"
