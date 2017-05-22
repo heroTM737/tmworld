@@ -20,7 +20,8 @@ let bot = [
     "CKND-CPI",
     "GuardOfTheBody",
     "afilillan",
-    "Yoalia"
+    "Yoalia",
+    "Lollypoppy"
 ];
 
 let noob = [
@@ -45,7 +46,8 @@ let noob = [
     "MovesLikeDodger",
     "HK Law",
     "devil181818",
-    "BunMido"
+    "BunMido",
+    "colinbaker622"
 ];
 
 let ignore = [
