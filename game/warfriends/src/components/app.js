@@ -10,6 +10,8 @@ import PlayerData from '../data/player';
 import QuestTable from './QuestTable';
 import QuestData from '../data/quest';
 
+import Guide from './Guide';
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -43,6 +45,7 @@ export default class App extends Component {
     let statsTab = this.loopFn(StatsData, "app");
     let playerTab = (<PlayerTable data={PlayerData} />);
     let questTab = (<QuestTable data={QuestData} />);
+    let guideTab = (<Guide />);
 
     return (
       <div>
@@ -54,6 +57,7 @@ export default class App extends Component {
           <Tab title="Stats">{statsTab}</Tab>
           <Tab title="Player">{playerTab}</Tab>
           <Tab title="Quest">{questTab}</Tab>
+          <Tab title="Guide">{guideTab}</Tab>
         </Tabs>
       </div>
     );

@@ -39,7 +39,8 @@ let bot = [
     "piccolino",
     "Xavier psychopath",
     "greedyPatriot",
-    "1bodyAK"
+    "1bodyAK",
+    "3survive4"
 ];
 
 let very_noob = [
