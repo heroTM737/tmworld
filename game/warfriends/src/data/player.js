@@ -24,36 +24,65 @@ let bot = [
     "Lollypoppy",
     "Grimmer",
     "Astardotrem",
-    "Praetorian225"
+    "Praetorian225",
+    "Sammy Chan",
+    "greengod333",
+    "FearME",
+    "100k0u7",
+    "nick98",
+    "MadMaxMaster",
+    "hippiePeace68",
+    "Arrowyn",
+    "legendaryJoe",
+    "buzzlightyear",
+    "coolDAWN",
+    "piccolino",
+    "Xavier psychopath",
+
 ];
 
-let noob = [
+let very_noob = [
+    "Warfriends392139",
+    "Warfriends907263",
+    "Warfriends156989",
+    "Warfriends513779",
+    "Warfriends509742",
     "iris",
     "t_jack",
     "S.W.A.T",
     "Amakuza66",
-    "Warfriends392139",
     "eri",
     "samichan",
-    "Warfriends156989",
     "joekiller",
-    "torumu",
     "ph1je",
     "bokchoy",
 	"Nico Khosasie",
-    "Tú047",
     "KynDigg",
     "TORUMU",
     "Fu-Hsiung Tsao",
     "BigFriend9394",
     "MovesLikeDodger",
-    "HK Law",
     "devil181818",
     "BunMido",
     "colinbaker622",
-    "Warfriends907263",
-    "juuu"
+    "juuu",
+    "Ue-Yo",
+    "Alvis Ng",
+    "hung",
+    "NightEye",
+    "Ryan",
+    "Oat??",
+    "MaddyDGamer",
+    "Kalyan Patra",
+    "eri",
+    "molmol",
+    "Axa£"
 ];
+
+let noob = [
+    "Tú047",
+    "HK Law",
+]
 
 let ignore = [
     "VVIP",
@@ -61,4 +90,4 @@ let ignore = [
     "AUSY_D"
 ];
 
-export default {bot, noob, ignore};
+export default {bot, very_noob, noob, ignore};
