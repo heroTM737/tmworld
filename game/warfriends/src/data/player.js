@@ -21,7 +21,10 @@ let bot = [
     "GuardOfTheBody",
     "afilillan",
     "Yoalia",
-    "Lollypoppy"
+    "Lollypoppy",
+    "Grimmer",
+    "Astardotrem",
+    "Praetorian225"
 ];
 
 let noob = [
@@ -29,10 +32,10 @@ let noob = [
     "t_jack",
     "S.W.A.T",
     "Amakuza66",
-    "warfriends392139",
+    "Warfriends392139",
     "eri",
     "samichan",
-    "warfriends156989",
+    "Warfriends156989",
     "joekiller",
     "torumu",
     "ph1je",
@@ -47,7 +50,9 @@ let noob = [
     "HK Law",
     "devil181818",
     "BunMido",
-    "colinbaker622"
+    "colinbaker622",
+    "Warfriends907263",
+    "juuu"
 ];
 
 let ignore = [
