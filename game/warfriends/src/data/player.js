@@ -38,7 +38,8 @@ let bot = [
     "coolDAWN",
     "piccolino",
     "Xavier psychopath",
-
+    "greedyPatriot",
+    "1bodyAK"
 ];
 
 let very_noob = [
@@ -76,13 +77,16 @@ let very_noob = [
     "Kalyan Patra",
     "eri",
     "molmol",
-    "Axa£"
+    "Axa£",
+    "Jape4lif3",
+    "Gawd",
+    "AnhDang301"
 ];
 
 let noob = [
     "Tú047",
     "HK Law",
-]
+];
 
 let ignore = [
     "VVIP",
