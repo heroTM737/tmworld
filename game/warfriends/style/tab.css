@@ -1,4 +1,4 @@
-.Tabs ul {
+.Tabs .TabsItemList {
     display: flex;
     flex-direction: row;
     padding: 0px;
@@ -6,7 +6,7 @@
     background: pink;
 }
 
-.Tabs ul li {
+.Tabs .TabsItemList .TabsItem {
     cursor: pointer;
     list-style-type: none;
     padding: 3px 20px;
@@ -14,11 +14,11 @@
     font-family: cursive;
 }
 
-.Tabs ul li:hover {
+.Tabs .TabsItemList .TabsItem:hover {
     background: yellow;
 }
 
-.Tabs ul li.active {
+.Tabs .TabsItemList .TabsItem.active {
     position: relative;
     background: yellow;
     color: blue;

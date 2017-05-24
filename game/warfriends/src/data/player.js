@@ -84,7 +84,8 @@ let very_noob = [
     "AnhDang301",
     "Szs189",
     "EndingFire",
-    "Eddie Chung"
+    "Eddie Chung",
+    "Key0075"
 ];
 
 let noob = [

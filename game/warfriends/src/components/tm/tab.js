@@ -33,14 +33,14 @@ export class Tabs extends Component {
         var titles = [];
         for (var key in this.state.children) {
             var className = key == this.state.activeTab ? "active" : "";
-            titles.push(<li key={key} className={className} onClick={this.getOnClickFunction(key)}>{key}</li>);
+            titles.push(<li key={key} className={"TabsItem " + className} onClick={this.getOnClickFunction(key)}>{key}</li>);
         }
 
         var child = this.state.children[this.state.activeTab];
 
         return (
             <div className="Tabs">
-                <div className="TabsHeader"><ul>{titles}</ul></div>
+                <div className="TabsHeader"><ul className="TabsItemList">{titles}</ul></div>
                 <div className="TabsBody" key={this.state.activeTab}>{child}</div>
             </div>
         );
@@ -53,8 +53,6 @@ export class Tab extends Component {
     }
 
     render() {
-        return (
-            <div className="TabsItem">{this.props.children}</div>
-        );
+        return this.props.children;
     }
 }
