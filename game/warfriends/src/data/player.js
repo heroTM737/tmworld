@@ -40,7 +40,10 @@ let bot = [
     "Xavier psychopath",
     "greedyPatriot",
     "1bodyAK",
-    "3survive4"
+    "3survive4",
+    "f1ck",
+    "Awessomeness",
+    "*Viginlance*312"
 ];
 
 let very_noob = [
@@ -49,6 +52,7 @@ let very_noob = [
     "Warfriends156989",
     "Warfriends513779",
     "Warfriends509742",
+    "Warfriends616745",
     "iris",
     "t_jack",
     "S.W.A.T",
@@ -85,7 +89,9 @@ let very_noob = [
     "Szs189",
     "EndingFire",
     "Eddie Chung",
-    "Key0075"
+    "Key0075",
+    "Lawliet",
+    "Michael Yuen"
 ];
 
 let noob = [
