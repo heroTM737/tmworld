@@ -13,6 +13,11 @@ let quests = [
         name: "shotgunner",
         mission: 4,
         count: 10
+    },
+    {
+        name: "assulft rifle",
+        mission: 11,
+        count: 20
     }
 ]
 

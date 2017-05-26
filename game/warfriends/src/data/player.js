@@ -43,7 +43,8 @@ let bot = [
     "3survive4",
     "f1ck",
     "Awessomeness",
-    "*Viginlance*312"
+    "*Viginlance*312",
+    "Anyboo"
 ];
 
 let very_noob = [
