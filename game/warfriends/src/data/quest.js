@@ -15,7 +15,7 @@ let quests = [
         count: 10
     },
     {
-        name: "assulft rifle",
+        name: "assault rifle",
         mission: 11,
         count: 20
     }
