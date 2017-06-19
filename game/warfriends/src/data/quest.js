@@ -18,6 +18,36 @@ let quests = [
         name: "assault rifle",
         mission: 11,
         count: 20
+    },
+	{
+        name: "machinegunner",
+        mission: 13,
+        count: 6
+    },
+	{
+        name: "machinegunner",
+        mission: 4,
+        count: 9
+    },
+	{
+        name: "machinegunner",
+        mission: 7,
+        count: 5
+    },
+	{
+        name: "machinegunner",
+        mission: 8,
+        count: 7
+    },
+	{
+        name: "machinegunner",
+        mission: 11,
+        count: 4
+    },
+	{
+        name: "machinegunner",
+        mission: 12,
+        count: 4
     }
 ]
 
