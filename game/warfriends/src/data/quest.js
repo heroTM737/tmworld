@@ -48,6 +48,11 @@ let quests = [
         name: "machinegunner",
         mission: 12,
         count: 4
+    },
+	{
+        name: "grenadier",
+        mission: 8,
+        count: 28
     }
 ]
 
