@@ -14,7 +14,7 @@
 
     <!--page specific-->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/component1.css">
+    <link rel="stylesheet" type="text/css" href="css/cnav.css">
 
     <script src="lib/jquery/jquery-3.2.1.min.js"></script>
 </head>
@@ -26,14 +26,14 @@
     <div class="wellcometext">
         Wellcome to TM's World
     </div>
-    <div class="cn-wrapper opened-nav cnav">
+    <div class="cnav">
         <ul>
-            <li><a href="app/programming" target="_blank">Programming</a></li>
-            <li><a href="game/" target="_blank">Game</a></li>
-            <li><a href="app/what_a_beauty" target="_blank">What a beauty</a></li>
-            <li><a href="app/tools" target="_blank">Tools</a></li>
-            <li><a href="app/tools" target="_blank">Tools</a></li>
-            <li><a href="app/tools" target="_blank">Tools</a></li>
+            <li><a href="app/programming" target="_blank"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+            <li><a href="game/" target="_blank"><i class="fa fa-gamepad" aria-hidden="true"></i></a></li>
+            <li><a href="app/what_a_beauty" target="_blank"><i class="fa fa-picture-o" aria-hidden="true"></i></a></li>
+            <li><a href="app/tools" target="_blank"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+            <li><a href="app/tools" target="_blank"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
+            <li><a href="app/tools" target="_blank"><i class="fa fa-wrench" aria-hidden="true"></i></a></li>
         </ul>
     </div>
 
@@ -41,13 +41,10 @@
         $(document).ready(function () {
             var selected = $(".cnav ul li");
             var size = selected.length;
-
             var rotateStep = 360 / size;
             var skew = 90 - 360 / size;
-
             var textRotate = (180 - rotateStep) / 2;
             var textTransform = "skew(-" + skew + "deg) rotate(-" + textRotate + "deg) scale(1)";
-
             selected.each(function (index, value) {
                 var rotate = rotateStep * index;
                 $(value).css("transform", "rotate(" + rotate + "deg) skew(" + skew + "deg) scale(1)");
