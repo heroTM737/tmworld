@@ -1,0 +1,88 @@
+.cnav * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.cnav,
+.cnav * {
+  font-size: 10px;
+}
+
+.cnav .fa {
+  font-size: 27px;
+}
+
+.cnav img {
+  width: 3em;
+}
+
+.cnav li a {
+  padding-top: calc(2em - 14px);
+}
+
+.cnav li a span {
+  color: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 3em;
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  display: none;
+}
+
+.cnav li a:hover span {
+  display: block;
+}
+
+.cnav {
+  width: 32em;
+  height: 32em;
+  overflow: hidden;
+  border-radius: 50%;
+  pointer-events: auto;
+  transition: all.3s ease;
+}
+
+.cnav li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16em;
+  height: 16em;
+  transform-origin: 100% 100%;
+  overflow: hidden;
+  transition: border.3s ease;
+}
+
+.cnav li a {
+  display: block;
+  height: 32em;
+  width: 32em;
+  position: absolute;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  transition-duration: 2s;
+}
+
+.cnav li:nth-child(odd) a {
+  background: radial-gradient(rgba(0,0,0,0) 49%, rgba(20, 36, 40, 0.5) 50%);
+}
+
+.cnav li:nth-child(even) a {
+   background: radial-gradient(rgba(0,0,0,0) 49%, rgba(0, 64, 161, 0.5) 50%);
+}
+
+.cnav li a:hover {
+  background: radial-gradient(rgba(0,0,0,0) 49%, rgba(20, 36, 40, 1) 50%);
+}
+
+@media screen and (max-width:480px) {
+  .cnav * {
+    font-size:.68em;
+  }
+}

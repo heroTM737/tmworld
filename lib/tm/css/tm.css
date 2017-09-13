@@ -20,3 +20,13 @@
 .box-body {
     padding: 5px;
 }
+
+.centerV {
+    display: flex;
+    align-items: center;
+}
+
+.centerH {
+    display: flex;
+    justify-content: center;
+}

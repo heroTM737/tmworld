@@ -43,3 +43,11 @@
 .menu li:hover a{
     color: rgba(128, 128, 128, 0.5);
 }
+
+.cnav {
+    position: fixed;
+    top: 300px;
+    left: 50%;
+    margin-left: -16em;
+    z-index: 10;
+}
