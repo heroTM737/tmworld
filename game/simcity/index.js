@@ -5,6 +5,9 @@ $.ajax("data/storage.json", {
 
             var htmlColumn = [];
             var number_of_row = Math.floor($(window).height() / 30) - 1;
+            if (number_of_row > 30) {
+                number_of_row = 30;
+            }
 
             var count = 0;
             var col_index = 0;
