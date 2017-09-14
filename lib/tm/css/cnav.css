@@ -43,7 +43,7 @@
   overflow: hidden;
   border-radius: 50%;
   pointer-events: auto;
-  transition: all.3s ease;
+  transition: all .3s ease;
 }
 
 .cnav li {
@@ -82,7 +82,8 @@
 }
 
 @media screen and (max-width:480px) {
+  .cnav,
   .cnav * {
-    font-size:.68em;
+    font-size: 5px;
   }
 }
