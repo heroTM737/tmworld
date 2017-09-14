@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>SimCity BuildIt by TM</title>
+    <link rel="shortcut icon" href="../../image/logo/anchor_blue_32x32.png" />
+
+    <!--default-->
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../css/font.css">
+
+    <!--library-->
+    <link rel="stylesheet" type="text/css" href="../../lib/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../../lib/tm/css/tm.css">
+
+    <!--page specific-->
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div id="storage" class="storage">
+        <div id="storageTable" class="storageTable centerH"></div>
+        <div id="storageCalculator" class="storageCalculator">
+            <input id="sccv" type="number" placeholder="Current volumn" class="form-control"/>
+            <input id="scev" type="number" placeholder="Expect volumn" class="form-control"/>
+            <input id="scss" type="number" disabled placeholder="Storage set" class="form-control"/>
+            <input id="scap" type="text" disabled placeholder="Admin price in vnd" class="form-control"/>
+            <button onclick="calculateStorage()">Calculate</button>
+        </div>
+    </div>
+
+    <script src="../../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../../lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
