@@ -15,16 +15,21 @@
 
     <!--page specific-->
     <link rel="stylesheet" type="text/css" href="index.css">
+
+    <script src="../../lib/d3js/4.10.2/d3.min.js"></script>
 </head>
 
 <body>
-    <div class="gallery centerH">
-        <div class="perspective"><img src="image/IMG_20170903_123147.jpg" /></div>
-        <div class="perspective"><img src="image/IMG_20170903_170635.jpg" /></div>
-        <div class="perspective"><img src="image/IMG_20170903_194837.jpg" /></div>
-        <div class="perspective"><img src="image/IMG_20170904_083122.jpg" /></div>
-        <div class="perspective"><img src="image/IMG_20170904_094933.jpg" /></div>
+    <div class="popup">
+        <div class="gallery centerH">
+            <div class="perspective"><img src="image/IMG_20170903_123147.jpg" /></div>
+            <div class="perspective"><img src="image/IMG_20170903_170635.jpg" /></div>
+            <div class="perspective"><img src="image/IMG_20170903_194837.jpg" /></div>
+            <div class="perspective"><img src="image/IMG_20170904_083122.jpg" /></div>
+            <div class="perspective"><img src="image/IMG_20170904_094933.jpg" /></div>
+        </div>
     </div>
+    <div id="map" class="map centerVH"></div>
     <script src="../../lib/jquery/jquery-3.2.1.min.js"></script>
     <script src="../../lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="index.js"></script>

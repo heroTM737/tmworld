@@ -1,12 +1,12 @@
 body {
-    background: #000;
+    background: #2b3d47;
 }
 
 .perspective {
     perspective: 600px;
-    position: absolute;
-    top: 150px;
     transition: all 1s;
+    width: 100px;
+    height: 150px;
 }
 
 img {
@@ -27,5 +27,61 @@ img {
 .perspective:hover img {
     transform: rotateY(0);
     height: 300px;
-        box-shadow: 0px 0px 40px #fff;
+    box-shadow: 0px 0px 40px #fff;
+}
+
+.popup {
+    width: 0;
+    height: 0;
+    position: fixed;
+    top: 50vh;
+    left: 50vh;
+    transition: all 1s;
+    box-sizing: content-box;
+    overflow: hidden;
+}
+
+.popup:before {
+    content: "";
+    position: fixed;
+    top: 50vh;
+    left: 50vh;
+    width: 0;
+    height: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.popup.open {
+    width: 100vw;
+    height: 150px;
+    top: calc(50vh - 75px);
+    left: 0;
+    padding: 20px 0;
+    overflow: visible;
+}
+
+.open.popup:before {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+.map {
+    height: 100%;
+}
+
+.map image {
+    transform: rotate(180deg);
+    transform-origin: center center;
+}
+
+.map path {
+    stroke: #2b3d47;
+    fill: #405866;
+    fill-opacity: 0.5;
+}
+
+.map .location {
+    fill: red;
 }

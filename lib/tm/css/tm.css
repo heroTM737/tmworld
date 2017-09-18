@@ -30,3 +30,9 @@
     display: flex;
     justify-content: center;
 }
+
+.centerVH {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
