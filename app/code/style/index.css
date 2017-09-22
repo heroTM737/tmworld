@@ -13,10 +13,14 @@ body {
     font-size: 80px;
 }
 
+.wellcometext i.fa {
+    font-family: "FontAwesome" !important;
+}
+
 .menu {
     padding-top: 100px;
 }
 
-.cnav {
-    margin-right: 100px;
+.menu img {
+    width: 32px;
 }
