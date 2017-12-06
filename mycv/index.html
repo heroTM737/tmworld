@@ -6,14 +6,25 @@
     <title>Tien's CV</title>
     <link rel="shortcut icon" href="favicon.png" />
 
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lora|Roboto" rel="stylesheet">
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../lib/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/3.3.7/bootstrap.min.js"></script>
+
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link rel="stylesheet" type="text/css" href="css/bubble.css">
+    <link rel="stylesheet" type="text/css" href="css/tree.css">
+    <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="../lib/tm/css/tm.css">
 
     <!-- javascript -->
     <script src="index.js"></script>
     <script src="../lib/jquery/jquery-3.2.1.min.js"></script>
+    <script src="../lib/d3js/3.5.17/d3.min.js"></script>
 </head>
 
 <body>
@@ -37,9 +48,8 @@
         </ul>
     </div>
     <div id="me" class="section">
-        <span>Nguyễn Xuân Tiến</span>
-        <br/>
-        <span style="font-size:40px;">A Code Addictor</span>
+        <div class="myname">Nguyễn Xuân Tiến</div>
+        <div class="decribeme">A Code Addictor</div>
     </div>
     <div id="skill" class="section square">
         <div class="squareItem javascript">
@@ -52,18 +62,82 @@
         </div>
         <div class="squareItem css">
             <div class="squareItemName">CSS</div>
+            <div class="gallery centerH centerV">
+                <div class="perspective">
+                    <img src="image/gallery/IMG_20170903_123147.jpg" />
+                </div>
+                <div class="perspective">
+                    <img src="image/gallery/IMG_20170903_170635.jpg" />
+                </div>
+                <div class="perspective">
+                    <img src="image/gallery/IMG_20170903_194837.jpg" />
+                </div>
+                <div class="perspective">
+                    <img src="image/gallery/IMG_20170904_083122.jpg" />
+                </div>
+                <div class="perspective">
+                    <img src="image/gallery/IMG_20170904_094933.jpg" />
+                </div>
+            </div>
         </div>
         <div class="squareItem d3js">
             <div class="squareItemName">D3JS</div>
         </div>
-        <div class="squareItem java">
+        <div class="squareItem java centerH centerV">
             <div class="squareItemName">Java</div>
+            <div class="">
+                <div>public static void main(String[] agrs) {</div>
+                <div style="padding: 3px 3px 3px 30px;">&lt;String&gt; list = new ArrayList&lt;String&gt;();</div>
+                <div style="padding: 3px 3px 3px 30px;">list.add("Tien");</div>
+                <div style="padding: 3px 3px 3px 30px;">list.add("Tuan");</div>
+                <div style="padding: 3px 3px 3px 30px;">list.add("Tu");</div>
+                <div style="padding: 3px 3px 3px 30px;">list.stream()</div>
+                <div style="padding: 3px 3px 3px 60px;">.filter((item) -> item.contains("Tien"))</div>
+                <div style="padding: 3px 3px 3px 60px;">.collect(Collectors.toList())</div>
+                <div style="padding: 3px 3px 3px 60px;">.forEach((item) -> System.out.println(item))</div>
+                <div>}</div>
+            </div>
         </div>
     </div>
-    <div id="history" class="section">history</div>
-    <div id="interesting" class="section">interesting</div>
-    <div id="findme" class="section">find me</div>
+    <div id="history" class="section centerVH">
+        Certificate:
+        <br/> 740 TOEIC by IIG Vietname
+        <br/> AWS Developer Certificate
+        <br/> 2010 -> 2014: PTIT, good result
+        <br/> Nov 2014 -> Dec 2014: VC Corporation Enbac.com
+        <br/> PHP full stack developer: working with html, css, js, php, wingix, memcache, Smarty, mysql
+        <br/> Dec 2014 -> Now: FPT Software, partner Hewlett Packard Enterprise ArcSight ESM
+        <br/> ArcSight Command Center
+        <br/> Java Web Frontend Developer: using GWT to develope frontend side, maintaining current feature, adding new feature like d3 chart, threat map, cluster view
+        <br/> English Communicator: reponsible for communicating with customer, aquiring task list, delivering result
+        <br/> Team leader: assigning task to team member, doing code review, solution support, technical support
+        <br/> ArcSight Managerment Center
+        <br/> ReactJS Consultant: ReactJS architecture, base project structure, designing class, , chart integration
+        <br/> Solution Support: algorithm solution, styling solution, efficiency solution
+        <br/> ArcSight Console
+        <br/> Solution Support: algorithm solution, styling solution, efficiency solution
+        <br/>
+    </div>
+    <div id="interesting" class="section centerVH">
+        <div>
+            Video Game: CSGO, DOTA2, DIABLO, Call of Duty, Sniper Ghost Warrior
+            <br/> Sport: Table Tennis, Swimming
+        </div>
+    </div>
+    <div id="findme" class="section centerVH">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email</label>
+                <input type="text" class="form-control" disabled value="xuantien.nguyen93@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Phone</label>
+                <input type="text" class="form-control" disabled value="+84 989 166 823">
+            </div>
+        </form>
+    </div>
     <script src="js/bubble.js"></script>
+    <script src="js/tree.js"></script>
 </body>
 
 </html>

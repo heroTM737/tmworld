@@ -1,0 +1,12 @@
+.link {
+    fill: none;
+    stroke: #99ccff;
+}
+
+circle {
+    fill: yellow;
+}
+
+text {
+    fill: #fff;
+}
