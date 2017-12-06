@@ -1,0 +1,16 @@
+.bubbleContainer {
+    position: relative;
+}
+
+.bubbleContainer .bubble {
+    position: absolute;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: #fff;
+    line-height: 60px;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+}

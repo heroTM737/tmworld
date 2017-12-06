@@ -1,0 +1,105 @@
+body {
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.section {
+    height: 100vh;
+    background: #000;
+}
+
+/* menu */
+
+#menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.1);
+    border-bottom-right-radius: 20px;
+}
+
+#menu ul {
+    top: 0;
+    left: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    padding: 0 10px;
+    height: 40px;
+    list-style-type: none;
+    color: #fff;
+    font-size: 15px;
+    line-height: 40px;
+    float: left;
+}
+
+#menu ul li a {
+    color: #fff;
+}
+
+
+/* me */
+
+#me {
+    width: 100vw;
+    background: url(./image/me.jpg);
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    box-sizing: border-box;
+    padding: 360px 200px;
+    font-size: 60px;
+    color: #fff;
+}
+
+
+/* skill */
+.square {
+    overflow: hidden;
+}
+.square .squareItem {
+    width: 50vw;
+    height: 50vh;
+    float: left;
+    position: relative;
+}
+.square .squareItem .bubbleContainer {
+    width: 100%;
+    height: 100%;
+}
+.square .squareItem .squareItemName {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: green;
+    padding: 5px;
+}
+
+#skill .javascript {
+    background: #000;
+}
+#skill .css {
+    background: #fff;
+}
+#skill .d3js {
+    background: #ccc;
+}
+#skill .java {
+    background: #c6c6c6;
+}
+.avatar {
+    background-image: url(./image/chicken.png);
+}
+
+.library {
+    background-image: url(./image/library.png);
+}
+
+.simpleweb {
+    background-image: url(./image/simple.png);
+}
