@@ -4,7 +4,7 @@
 
 .section {
     height: 100vh;
-    background: url(./image/blackboard.png);
+    background: url(./image/background/star.png);
     color: #fff;
     position: relative;
 }
@@ -51,6 +51,7 @@ a:hover {
     color: #000;
 }
 
+#menu ul li a.active,
 #menu ul li a:hover {
     color: #d5ebff;
 }
@@ -60,7 +61,7 @@ a:hover {
 
 #me {
     width: 100vw;
-    background: url(./image/me.jpg);
+    background: url(./image/background/me.jpg);
     background-repeat: no-repeat;
     background-size: auto 100%;
     box-sizing: border-box;
@@ -127,12 +128,14 @@ a:hover {
 
 
 /* history */
+
 #history {
     display: flex;
     flex-direction: row;
     justify-content: center;
     padding-left: 20px;
 }
+
 #history .certificate {
     background-image: url(./image/certificate_50x50.png);
     background-repeat: no-repeat;
@@ -143,18 +146,22 @@ a:hover {
     left: 100px;
     height: 50px;
 }
+
 #history .time {
     position: relative;
 }
+
 .positionContainer {
     position: absolute;
     left: 0px;
     width: 100%;
 }
+
 #history .time img {
     max-width: 200px;
     max-height: 160px;
 }
+
 #history .time .timevalue {
     transform: rotate(-45deg);
     transform-origin: bottom left;
@@ -162,6 +169,7 @@ a:hover {
     width: calc(100% + 10px);
     text-align: center;
 }
+
 #history .time .timeicon {
     width: 20px;
     height: 20px;
@@ -171,19 +179,24 @@ a:hover {
     left: -13px;
     background: #53a2a6;
 }
+
 #history .time .timelogo {
     border-bottom: 6px solid #53a2a6;
     text-align: center;
 }
+
 #history .time .timedes {
     padding: 10px 0 0 5px;
 }
+
 #history .time .timedes .timedestitle {
     color: #53a2a6;
 }
+
 #history .time .timedes .timedestitlesmall {
     font-weight: bold;
 }
+
 #history .rightTriangle {
     width: 0;
     height: 0;
@@ -192,6 +205,21 @@ a:hover {
     border-left: 10px solid #53a2a6;
     border-right: none;
 }
+
+
+/* interesting */
+
+#interesting img {
+    width: 50px;
+}
+
+#interesting .iconContainer {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+
 /* find me */
 
 #findme form {
