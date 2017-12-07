@@ -12,7 +12,7 @@ function createTabs() {
         function openTab(id) {
             $(tabContainer).find(".tab").each(function (tabIndex, tab) {
                 if ($(tab).attr("data-id") == id) {
-                    $(tab).css("display", "block");
+                    $(tab).css("display", "flex");
                 } else {
                     $(tab).css("display", "none");
                 }

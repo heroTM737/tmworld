@@ -63,8 +63,8 @@ createTree(treeData);
 
 function createTree(data) {
     var margin = { top: 20, right: 120, bottom: 20, left: 120 },
-    width = $(".d3js").width() - margin.right - margin.left,
-    height = $(".d3js").height() - margin.top - margin.bottom;
+    width = 800 - margin.right - margin.left,
+    height = 500 - margin.top - margin.bottom;
 
 var i = 0,
     duration = 750,
