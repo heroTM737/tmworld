@@ -130,6 +130,7 @@ a:hover {
 #history {
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding-left: 20px;
 }
 #history .certificate {
@@ -148,9 +149,11 @@ a:hover {
 .positionContainer {
     position: absolute;
     left: 0px;
+    width: 100%;
 }
 #history .time img {
-    width: 200px;
+    max-width: 200px;
+    max-height: 160px;
 }
 #history .time .timevalue {
     transform: rotate(-45deg);
@@ -170,6 +173,7 @@ a:hover {
 }
 #history .time .timelogo {
     border-bottom: 6px solid #53a2a6;
+    text-align: center;
 }
 #history .time .timedes {
     padding: 10px 0 0 5px;
