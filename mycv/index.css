@@ -4,9 +4,9 @@
 
 .section {
     height: 100vh;
-    background: url(./image/background/main.jpg);
     color: #fff;
     position: relative;
+    background: url(./image/background/main.jpg);
 }
 
 .section * {
@@ -54,6 +54,7 @@ a:hover {
 #menu ul li a.active,
 #menu ul li a:hover {
     color: #d5ebff;
+    cursor: pointer;
 }
 
 

@@ -34,3 +34,6 @@
     margin: 0 5px;
     box-sizing: content-box;
 }
+.tabs .tabsHeader ul li:hover {
+    cursor: pointer;
+}
