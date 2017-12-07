@@ -10,7 +10,7 @@
     height: 150px;
 }
 
-img {
+.gallery img {
     height: 150px;
     transform: rotateY(45deg);
     -webkit-transition: transform 1s;

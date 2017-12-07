@@ -7,11 +7,17 @@
     <link rel="shortcut icon" href="favicon.png" />
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lora|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lora|Roboto|Sigmar+One" rel="stylesheet">
+
+    <!-- jquery -->
+    <script src="../lib/jquery/jquery-3.2.1.min.js"></script>
+
+    <!-- d3js -->
+    <script src="../lib/d3js/3.5.17/d3.min.js"></script>
 
     <!-- bootstrap -->
     <link rel="stylesheet" type="text/css" href="../lib/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="../lib/bootstrap/3.3.7/bootstrap.min.js"></script>
+    <script src="../lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <!-- style -->
     <link rel="stylesheet" type="text/css" href="css/reset.css">
@@ -19,19 +25,18 @@
     <link rel="stylesheet" type="text/css" href="css/bubble.css">
     <link rel="stylesheet" type="text/css" href="css/tree.css">
     <link rel="stylesheet" type="text/css" href="css/gallery.css">
+    <link rel="stylesheet" type="text/css" href="css/tabs.css">
     <link rel="stylesheet" type="text/css" href="../lib/tm/css/tm.css">
 
-    <!-- javascript -->
-    <script src="index.js"></script>
-    <script src="../lib/jquery/jquery-3.2.1.min.js"></script>
-    <script src="../lib/d3js/3.5.17/d3.min.js"></script>
 </head>
 
 <body>
     <div id="menu">
         <ul>
             <li>
-                <a href="#me">Tiến</a>
+                <a href="#me">
+                    <span style="font-size:20px;font-family:'Sigmar One',cursive;">Tiến</span>
+                </a>
             </li>
             <li>
                 <a href="#skill">Skills</a>
@@ -52,71 +57,172 @@
         <div class="decribeme">A Code Addictor</div>
     </div>
     <div id="skill" class="section square">
-        <div class="squareItem javascript">
-            <div class="squareItemName">Javascript</div>
-            <div class="bubbleContainer">
-                <div class="bubble avatar"></div>
-                <div class="bubble library"></div>
-                <div class="bubble simpleweb"></div>
+        <div id="tabs" class="tabs">
+            <div class="tabsBody">
+                <div class="tab d3js" data-id="d3js"></div>
+                <div class="tab css" data-id="css3">
+                    <div class="gallery centerH centerV">
+                        <div class="perspective">
+                            <img src="image/gallery/IMG_20170903_123147.jpg" />
+                        </div>
+                        <div class="perspective">
+                            <img src="image/gallery/IMG_20170903_170635.jpg" />
+                        </div>
+                        <div class="perspective">
+                            <img src="image/gallery/IMG_20170903_194837.jpg" />
+                        </div>
+                        <div class="perspective">
+                            <img src="image/gallery/IMG_20170904_083122.jpg" />
+                        </div>
+                        <div class="perspective">
+                            <img src="image/gallery/IMG_20170904_094933.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tab javascript" data-id="jquery">
+                    <div class="bubbleContainer">
+                        <div class="bubble avatar"></div>
+                        <div class="bubble library"></div>
+                        <div class="bubble simpleweb"></div>
+                    </div>
+                </div>
+                <div class="tab java" data-id="java">
+                    <div class="speadParent centerVH">
+                        <div>
+                            <div>public static void main(String[] agrs) {</div>
+                            <div style="padding: 3px 3px 3px 30px;">&lt;String&gt; list = new ArrayList&lt;String&gt;();</div>
+                            <div style="padding: 3px 3px 3px 30px;">list.add("Tien");</div>
+                            <div style="padding: 3px 3px 3px 30px;">list.add("Tuan");</div>
+                            <div style="padding: 3px 3px 3px 30px;">list.add("Tu");</div>
+                            <div style="padding: 3px 3px 3px 30px;">list.stream()</div>
+                            <div style="padding: 3px 3px 3px 60px;">.filter((item) -> item.contains("Tien"))</div>
+                            <div style="padding: 3px 3px 3px 60px;">.collect(Collectors.toList())</div>
+                            <div style="padding: 3px 3px 3px 60px;">.forEach((item) -> System.out.println(item))</div>
+                            <div>}</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="squareItem css">
-            <div class="squareItemName">CSS</div>
-            <div class="gallery centerH centerV">
-                <div class="perspective">
-                    <img src="image/gallery/IMG_20170903_123147.jpg" />
-                </div>
-                <div class="perspective">
-                    <img src="image/gallery/IMG_20170903_170635.jpg" />
-                </div>
-                <div class="perspective">
-                    <img src="image/gallery/IMG_20170903_194837.jpg" />
-                </div>
-                <div class="perspective">
-                    <img src="image/gallery/IMG_20170904_083122.jpg" />
-                </div>
-                <div class="perspective">
-                    <img src="image/gallery/IMG_20170904_094933.jpg" />
-                </div>
-            </div>
-        </div>
-        <div class="squareItem d3js">
-            <div class="squareItemName">D3JS</div>
-        </div>
-        <div class="squareItem java centerH centerV">
-            <div class="squareItemName">Java</div>
-            <div class="">
-                <div>public static void main(String[] agrs) {</div>
-                <div style="padding: 3px 3px 3px 30px;">&lt;String&gt; list = new ArrayList&lt;String&gt;();</div>
-                <div style="padding: 3px 3px 3px 30px;">list.add("Tien");</div>
-                <div style="padding: 3px 3px 3px 30px;">list.add("Tuan");</div>
-                <div style="padding: 3px 3px 3px 30px;">list.add("Tu");</div>
-                <div style="padding: 3px 3px 3px 30px;">list.stream()</div>
-                <div style="padding: 3px 3px 3px 60px;">.filter((item) -> item.contains("Tien"))</div>
-                <div style="padding: 3px 3px 3px 60px;">.collect(Collectors.toList())</div>
-                <div style="padding: 3px 3px 3px 60px;">.forEach((item) -> System.out.println(item))</div>
-                <div>}</div>
+            <div class="tabsHeader">
+                <ul>
+                    <li data-id="d3js">
+                        <img src="image/code/d3js.png" />
+                    </li>
+                    <li data-id="css3">
+                        <img src="image/code/css3.png" />
+                    </li>
+                    <li data-id="jquery">
+                        <img src="image/code/jquery.png" />
+                    </li>
+                    <li data-id="java">
+                        <img src="image/code/java.png" />
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-    <div id="history" class="section centerVH">
-        Certificate:
-        <br/> 740 TOEIC by IIG Vietname
-        <br/> AWS Developer Certificate
-        <br/> 2010 -> 2014: PTIT, good result
-        <br/> Nov 2014 -> Dec 2014: VC Corporation Enbac.com
-        <br/> PHP full stack developer: working with html, css, js, php, wingix, memcache, Smarty, mysql
-        <br/> Dec 2014 -> Now: FPT Software, partner Hewlett Packard Enterprise ArcSight ESM
-        <br/> ArcSight Command Center
-        <br/> Java Web Frontend Developer: using GWT to develope frontend side, maintaining current feature, adding new feature like d3 chart, threat map, cluster view
-        <br/> English Communicator: reponsible for communicating with customer, aquiring task list, delivering result
-        <br/> Team leader: assigning task to team member, doing code review, solution support, technical support
-        <br/> ArcSight Managerment Center
-        <br/> ReactJS Consultant: ReactJS architecture, base project structure, designing class, , chart integration
-        <br/> Solution Support: algorithm solution, styling solution, efficiency solution
-        <br/> ArcSight Console
-        <br/> Solution Support: algorithm solution, styling solution, efficiency solution
-        <br/>
+    <div id="history" class="section">
+        <div class="certificate">
+            <div>740 TOEIC by IIG Viet Nam</div>
+            <div>AWS Developer Certificate</div>
+        </div>
+        <div class="time" style="width:90px;">
+            <div class="positionContainer" style="top:655px;">
+                <div class="timevalue" style="width:132px;">
+                    2010-2014
+                    <div class="timeicon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="time" style="width:200px;">
+            <div class="positionContainer" style="top:377px;">
+                <div class="timelogo">
+                    <img src="image/ptit.png" />
+                </div>
+                <div class="timedes">
+                    Information Technology
+                    <br/> Good Graduated
+                </div>
+            </div>
+        </div>
+        <div class="time" style="width:90px;">
+            <div class="positionContainer" style="top:560px;">
+                <div class="timevalue" style="width:132px;">
+                    Nov-Dec 2014
+                    <div class="timeicon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="time" style="width:200px;">
+            <div class="positionContainer" style="top:381px;">
+                <div class="timelogo">
+                    <img src="image/vccorp.png" />
+                </div>
+                <div class="timedes">
+                    <div>Project: Enbac.com</div>
+                    <div class="timedestitle">PHP full stack developer</div>
+                    <div>working with html, css, js, php, wingix, memcache, Smarty, mysql</div>
+                </div>
+            </div>
+        </div>
+        <div class="time" style="width:90px;">
+            <div class="positionContainer" style="top:466px;">
+                <div class="timevalue" style="width:132px;">
+                    Dec 2014 - Now
+                    <div class="timeicon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="time" style="width:300px;">
+            <div class="positionContainer" style="top:188px;">
+                <div class="timelogo">
+                    <img src="image/fsoft.png" />
+                </div>
+                <div class="timedes">
+                    ODC Hewlett Packard Enterprise ArcSight
+                    <br/>
+                    <br/>
+                    <div class="timedestitle">ArcSight Command Center</div>
+                    <div>
+                        <span class="timedestitlesmall">Java Web Frontend Developer:</span>
+                        using GWT to develope frontend side, maintaining current feature, adding new feature like d3 chart, threat map, cluster view
+                        <br/>
+                        <br/>
+                        <span class="timedestitlesmall">English Communicator:</span>
+                        reponsible for communicating with customer, aquiring task list, delivering result
+                        <br/>
+                        <br/>
+                        <span class="timedestitlesmall">Team leader:</span>
+                        assigning task to team member, doing code review, solution support, technical support
+                        <br/>
+                        <br/>
+                    </div>
+                    <div class="timedestitle">ArcSight Managerment Center</div>
+                    <div>
+                        <span class="timedestitlesmall">ReactJS Consultant:</span>
+                        ReactJS architecture, base project structure, designing class, , chart integration
+                        <br/>
+                        <br/>
+                        <span class="timedestitlesmall">Solution Support:</span>
+                        algorithm solution, styling solution, efficiency solution
+                        <br/>
+                        <br/>
+                    </div>
+                    <div class="timedestitle">ArcSight Console</div>
+                    <div>
+                        <span class="timedestitlesmall">Solution Support:</span>
+                        algorithm solution, styling solution, efficiency solution
+                        <br/>
+                        <br/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="time" style="width:200px;">
+            <div class="positionContainer" style="top:384px;">
+                <div class="rightTriangle"></div>
+            </div>
+        </div>
     </div>
     <div id="interesting" class="section centerVH">
         <div>
@@ -138,6 +244,8 @@
     </div>
     <script src="js/bubble.js"></script>
     <script src="js/tree.js"></script>
+    <script src="js/tab.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
