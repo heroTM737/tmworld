@@ -87,33 +87,8 @@ a:hover {
 
 /* skill */
 
-#skill .squareItemName {
-    color: green;
-}
-
-.square {
-    overflow: hidden;
-}
-
-.square .squareItem {
-    width: 50vw;
-    height: 50vh;
-    float: left;
-    position: relative;
-    background: rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.5);
-}
-
-.square .squareItem .bubbleContainer {
-    width: 100%;
-    height: 100%;
-}
-
-.square .squareItem .squareItemName {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 15px;
+.java {
+    font-size: 33px;
 }
 
 .avatar {
