@@ -60,13 +60,14 @@ a:hover {
 /* me */
 
 #me {
-    width: 100vw;
-    background: url(./image/background/me.jpg);
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    box-sizing: border-box;
-    padding: 360px 200px;
+    padding: 360px 0px 0px 200px;
     color: #fff;
+}
+
+#me .myimage {
+    position: absolute;
+    top: 144px;
+    right: -194px;
 }
 
 #me .myname {
