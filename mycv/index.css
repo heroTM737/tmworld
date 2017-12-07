@@ -4,7 +4,7 @@
 
 .section {
     height: 100vh;
-    background: url(./image/background/star.png);
+    background: url(./image/background/main.jpg);
     color: #fff;
     position: relative;
 }
@@ -149,6 +149,7 @@ a:hover {
 
 #history .time {
     position: relative;
+    font-size: 20px;
 }
 
 .positionContainer {
