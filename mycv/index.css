@@ -222,13 +222,8 @@ a:hover {
 /* interesting */
 
 #interesting img {
-    height: 50%;
-}
-
-#interesting .iconContainer {
-    padding: 10px;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.5);
+    max-height: 80%;
+    max-width: 90%;
 }
 
 
