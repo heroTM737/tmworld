@@ -6,7 +6,9 @@
     height: 100vh;
     color: #fff;
     position: relative;
-    background: url(./image/background/main.jpg);
+    background-image: url(./image/background/main.jpg);
+    background-size: 100% auto;
+    background-repeat: repeat-x;
 }
 
 .section * {
