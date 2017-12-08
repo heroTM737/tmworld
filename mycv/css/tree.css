@@ -3,10 +3,18 @@
     stroke: #99ccff;
 }
 
-circle {
-    fill: yellow;
-}
-
 text {
     fill: #fff;
+}
+
+.node circle {
+    stroke: #ffd042;
+    stroke-width:3px;
+    fill: #3f4fb1;
+}
+.node .name {
+    fill: #fff;
+}
+.node .shortname {
+    fill: #000;
 }
