@@ -92,8 +92,12 @@ a:hover {
 
 @media only screen and (max-device-width: 1200px) {
     #me {
-        padding: 70px 0px 0px 20px;
+        padding: 150px 0px 0px 20px;
         align-items: baseline;
+    }
+
+    #me .myimage {
+        height: 80vh;
     }
 }
 
