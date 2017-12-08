@@ -114,7 +114,7 @@ function createTree(data) {
 
         nodeEnter.append("text")
             .attr("class", "name")
-            .attr("x", function (d) { return d.children || d._children ? -20 : 20; })
+            .attr("x", function (d) { return d.children || d._children ? -22 : 22; })
             .attr("dy", ".35em")
             .attr("text-anchor", function (d) { return d.children || d._children ? "end" : "start"; })
             .text(function (d) { return d.name; })
