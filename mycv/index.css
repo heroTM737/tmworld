@@ -88,6 +88,16 @@ a:hover {
 
 /* skill */
 
+.java .javaTextContainer {
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.java .javaTextContainer * {
+    color: #000;
+}
+
 .java {
     font-size: 33px;
 }
