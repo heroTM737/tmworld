@@ -8,6 +8,7 @@ html, body {
 
 .section {
     height: 100vh;
+    box-sizing: border-box;
     color: #fff;
     position: relative;
     background-image: url(./image/background/main.jpg);
@@ -87,6 +88,12 @@ a:hover {
     font-size: 40px;
     font-family: 'Lora', serif;
     color: #fff;
+}
+
+@media only screen and (max-device-width: 1200px) {
+    #me {
+        padding: 100px 0px 0px 20px;
+    }
 }
 
 
