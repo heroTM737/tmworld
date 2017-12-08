@@ -126,6 +126,11 @@ a:hover {
     flex-direction: row;
     justify-content: center;
 }
+@media only screen and (max-device-width: 1200px) {
+    #history .timeContainer {
+        transform: scale(0.8);
+    }
+}
 
 #history .certificate {
     background-image: url(./image/certificate_50x50.png);
