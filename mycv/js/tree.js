@@ -1,6 +1,6 @@
 var treeData = {
     id: "tien",
-    name: "tien",
+    name: "Tien",
     children: [
         {
             id: "js",

@@ -1,3 +1,7 @@
+html, body {
+    overflow-x: hidden; 
+}
+
 ::-webkit-scrollbar {
     display: none;
 }
@@ -7,8 +11,6 @@
     color: #fff;
     position: relative;
     background-image: url(./image/background/main.jpg);
-    background-size: 100% auto;
-    background-repeat: repeat-x;
 }
 
 .section * {
@@ -208,8 +210,7 @@ a:hover {
 /* interesting */
 
 #interesting img {
-    width: 50px;
-    margin: 10px;
+    height: 50%;
 }
 
 #interesting .iconContainer {
