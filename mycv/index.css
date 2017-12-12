@@ -90,7 +90,7 @@ a:hover {
     color: #fff;
 }
 
-@media only screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #me {
         padding: 150px 0px 0px 20px;
         align-items: baseline;
@@ -138,7 +138,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
 }
-@media only screen and (max-device-width: 1200px) {
+@media screen and (max-width: 1200px) {
     #history .timeContainer {
         transform: scale(0.8);
     }
