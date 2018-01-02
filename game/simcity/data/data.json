@@ -1,76 +1,87 @@
 [
     {
+        "_id": "Metal",
         "name": "Metal",
-        "time": "1m",
-        "where": "factory",
+        "productionTime": "1m",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Minerals",
         "name": "Minerals",
-        "time": "30m",
-        "where": "factory",
+        "productionTime": "30m",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Seeds",
         "name": "Seeds",
-        "time": "20m",
-        "where": "factory",
+        "productionTime": "20m",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Wood",
         "name": "Wood",
-        "time": "3m",
-        "where": "factory",
+        "productionTime": "3m",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Texttiles",
         "name": "Texttiles",
-        "time": "3h",
-        "where": "factory",
+        "productionTime": "3h",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Chemicals",
         "name": "Chemicals",
-        "time": "2h",
-        "where": "factory",
+        "productionTime": "2h",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Plastics",
         "name": "Plastics",
-        "time": "9m",
-        "where": "factory",
+        "productionTime": "9m",
+        "source": "factory",
         "require": {}
     },
     {
+        "_id": "Vegetables",
         "name": "Vegetables",
-        "time": "20m",
-        "where": "Farmer's Market",
+        "productionTime": "20m",
+        "source": "Farmer's Market",
         "require": {
             "Seeds": 2
         }
     },
     {
+        "_id": "Hammer",
         "name": "Hammer",
-        "time": "14m",
-        "where": "Hardware Store",
+        "productionTime": "14m",
+        "source": "Hardware Store",
         "require": {
             "Metal": 1,
             "Wood": 1
         }
     },
     {
+        "_id": "Measuring Tape",
         "name": "Measuring Tape",
-        "time": "20m",
-        "where": "Hardware Store",
+        "productionTime": "20m",
+        "source": "Hardware Store",
         "require": {
             "Metal": 1,
             "Plastics": 1
         }
     },
     {
+        "_id": "Shovel",
         "name": "Shovel",
-        "time": "30m",
-        "where": "Hardware Store",
+        "productionTime": "30m",
+        "source": "Hardware Store",
         "require": {
             "Metal": 1,
             "Wood": 1,
@@ -78,51 +89,57 @@
         }
     },
     {
+        "_id": "Nails",
         "name": "Nails",
-        "time": "5m",
-        "where": "Building Supplies Store",
+        "productionTime": "5m",
+        "source": "Building Supplies Store",
         "require": {
             "Metal": 2
         }
     },
     {
+        "_id": "Planks",
         "name": "Planks",
-        "time": "30m",
-        "where": "Building Supplies Store",
+        "productionTime": "30m",
+        "source": "Building Supplies Store",
         "require": {
             "Wood": 2
         }
     },
     {
+        "_id": "Bricks",
         "name": "Bricks",
-        "time": "20m",
-        "where": "Building Supplies Store",
+        "productionTime": "20m",
+        "source": "Building Supplies Store",
         "require": {
             "Minerals": 2
         }
     },
     {
+        "_id": "Cement",
         "name": "Cement",
-        "time": "50m",
-        "where": "Building Supplies Store",
+        "productionTime": "50m",
+        "source": "Building Supplies Store",
         "require": {
             "Minerals": 2,
             "Chemicals": 1
         }
     },
     {
+        "_id": "Glue",
         "name": "Glue",
-        "time": "1h",
-        "where": "Building Supplies Store",
+        "productionTime": "1h",
+        "source": "Building Supplies Store",
         "require": {
             "Plastics": 2,
             "Chemicals": 1,
         }
     },
     {
+        "_id": "Chairs",
         "name": "Chairs",
-        "time": "20m",
-        "where": "Funiture Store",
+        "productionTime": "20m",
+        "source": "Funiture Store",
         "require": {
             "Wood": 2,
             "Nails": 1,
@@ -130,9 +147,10 @@
         }
     },
     {
+        "_id": "Tables",
         "name": "Tables",
-        "time": "30m",
-        "where": "Funiture Store",
+        "productionTime": "30m",
+        "source": "Funiture Store",
         "require": {
             "Planks": 1,
             "Nails": 2,
