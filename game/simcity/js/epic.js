@@ -3,7 +3,7 @@ var activeItems = [];
 var filter = "";
 
 $.ajax({
-    url: "http://127.0.0.1:7000/service/simcitybuildit/items",
+    url: "http://128.199.190.81:7000/service/simcitybuildit/items",
     dataType: "json",
     success: function (data, status, request) {
         buildEpic(data);
@@ -50,7 +50,7 @@ function addToItemTable(name) {
     var html = "<tr onclick=\"addToItemList('" + name + "', this)\" class=\"item\">";
     html += "<td><img src=\"" + item.image + "\"/></td>";
     html += "<td>" + name + "</td>";
-    html += "<td><input type='number'/></td>";
+    html += "<td><input type='number' onclick=\"(function abc(e){e.stopPropagation();})(event);\"/></td>";
     html += "</tr>";
     $("#itemTable").append(html);
 }
