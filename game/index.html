@@ -9,17 +9,18 @@
     <script src="../lib/jquery/jquery-3.2.1.min.js"></script>
 
     <style>
+		body {
+			background: #000;
+		}
         .container {
             width: 100vw;
             height: 100vh;
         }
-        
         .container img {
-            position: fixed;
-            height: 100vh;
-            top: 0;
-            left: 0;
-            box-shadow: -4px 0px 10px rgba(255, 255, 255, 0.5);
+            height: 300px;
+			border-radius: 5px;
+			box-shadow: 0px 0px 20px #fff;
+			margin: 15px;
         }
     </style>
 </head>
@@ -28,16 +29,8 @@
     <div class="container">
         <a href="dota2/"><img src="../image/game/dota2.jpg" /></a>
         <a href="warfriends/"><img src="../image/game/warfriends.jpg" /></a>
+		<a href="simcity/"><img src="../image/game/simcitybuildit.jpg" /></a>
     </div>
-    <script>
-    $(document).ready(function(){
-        var selected = $(".container a img");
-        var margin = $(window).width() / selected.length;
-        selected.each(function(index, value){
-            $(value).css("left", (index * margin) + "px");
-        });
-    });
-    </script>
 </body>
 
 </html>
