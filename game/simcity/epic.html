@@ -18,11 +18,22 @@
     <script src="../../lib/jquery/jquery-3.2.1.min.js"></script>
 
     <!--page specific-->
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/epic.css">
 </head>
 
 <body>
-    <div id="" class="">
+    <div class="wrapper" class="">
+        <div id="itemListContainer" class="itemListContainer">
+            <input type="text" onkeyup="onFilterChange(this.value)" placeholder="Search Item"/>
+            <div id="itemList" class="itemList"></div>
+        </div>
+        <div id="itemTableContainer" class="itemTableContainer">
+            <table>
+                <tbody id="itemTable">
+
+                </tbody>
+            </table>
+        </div>
     </div>
     <script src="js/epic.js"></script>
     <!--bootstrap-->

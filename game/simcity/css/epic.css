@@ -1,0 +1,50 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.itemListContainer input {
+    width: 100%;
+    border: none;
+    background: #000;
+    color: #fff;
+}
+.itemListContainer .itemList {
+    height: calc(100vh - 22px);
+    overflow: auto;
+}
+
+.itemListContainer input::-webkit-input-placeholder {
+    color: rgb(212, 138, 138);
+}
+
+.itemListContainer {
+    width: 50%;
+    background: #ccc;
+}
+
+.item {
+    cursor: pointer;
+    padding: 3px 0;
+}
+
+.item img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.item:hover {
+    background: #ff7575;
+}
+
+.itemTableContainer {
+    width: 50%;
+    padding: 26px 0 0 10px;
+    overflow: auto;
+    height: 100vh;
+}
+
+.itemTableContainer tr td {
+    padding: 3px;
+}
