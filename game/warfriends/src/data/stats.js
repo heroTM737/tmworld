@@ -71,6 +71,16 @@ var warfriends = {
                     accuracy: 100,
                     rate_of_fire: 300,
                     shot_speed: 30
+                },
+                disruptor: {
+                    price: 5899,
+                    price_type: "gold",
+                    level: 44,
+                    min_damage: 189.8,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 300,
+                    shot_speed: 30
                 }
             },
             smg: {
@@ -143,6 +153,16 @@ var warfriends = {
                     accuracy: 70,
                     rate_of_fire: 545.5,
                     shot_speed: 30
+                },
+                apollo: {
+                    price: 6699,
+                    price_type: "gold",
+                    level: 49,
+                    min_damage: 134.4,
+                    max_damage: 0,
+                    accuracy: 70,
+                    rate_of_fire: 545.5,
+                    shot_speed: 30
                 }
             },
             lmg: {
@@ -201,6 +221,16 @@ var warfriends = {
                     price_type: "gold",
                     level: 41,
                     min_damage: 233.7,
+                    max_damage: 0,
+                    accuracy: 73,
+                    rate_of_fire: 272.7,
+                    shot_speed: 30
+                },
+                starhammer: {
+                    price: 6299,
+                    price_type: "gold",
+                    level: 47,
+                    min_damage: 283,
                     max_damage: 0,
                     accuracy: 73,
                     rate_of_fire: 272.7,
@@ -265,6 +295,16 @@ var warfriends = {
                     price_type: "gold",
                     level: 39,
                     min_damage: 680.3,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 30,
+                    shot_speed: 80
+                },
+                three_eyes: {
+                    price: 5499,
+                    price_type: "gold",
+                    level: 46,
+                    min_damage: 830.3,
                     max_damage: 0,
                     accuracy: 100,
                     rate_of_fire: 30,
@@ -341,6 +381,16 @@ var warfriends = {
                     accuracy: 100,
                     rate_of_fire: 120,
                     shot_speed: 10
+                },
+                reaver: {
+                    price: 4699,
+                    price_type: "gold",
+                    level: 50,
+                    min_damage: 392.5,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 120,
+                    shot_speed: 10
                 }
             }
         },
@@ -398,7 +448,7 @@ var warfriends = {
                 },
                 firestarter: {
                     price: 3499,
-                    price_type: "warbucks",
+                    price_type: "gold",
                     level: 38,
                     min_damage: 1049.1,
                     max_damage: 0,
@@ -406,6 +456,16 @@ var warfriends = {
                     rate_of_fire: 7.4,
                     shot_speed: 10
                 },
+                doombringer: {
+                    price: 3999,
+                    price_type: "gold",
+                    level: 45,
+                    min_damage: 1365.1,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 7.4,
+                    shot_speed: 10
+                }
             },
             rocket_launch: {
                 gpr1: {
@@ -477,6 +537,16 @@ var warfriends = {
                     accuracy: 100,
                     rate_of_fire: 6.3,
                     shot_speed: 2
+                },
+                juggernaut: {
+                    price: 4399,
+                    price_type: "gold",
+                    level: 47,
+                    min_damage: 1874.7,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 6.3,
+                    shot_speed: 2
                 }
             }
         },
@@ -541,6 +611,16 @@ var warfriends = {
                 rate_of_fire: 200,
                 shot_speed: 30
             },
+            sawyer: {
+                price: 18999999,
+                price_type: "warbucks",
+                level: 49,
+                min_damage: 99.3,
+                max_damage: 0,
+                accuracy: 100,
+                rate_of_fire: 200,
+                shot_speed: 30
+            }
         }
     },
     army: {
@@ -784,6 +864,46 @@ var warfriends = {
             min_damage: 96.4,
             max_damage: 0
         },
+        renegade: {
+            price: 6499,
+            price_type: "gold",
+            level: 44,
+            min_health: 0,
+            max_health: 0,
+            deploy_cost: 1,
+            min_damage: 290.3,
+            max_damage: 0
+        },
+        sliverstrike: {
+            price: 6999,
+            price_type: "gold",
+            level: 46,
+            min_health: 0,
+            max_health: 0,
+            deploy_cost: 2,
+            min_damage: 315.2,
+            max_damage: 0
+        },
+        vtol: {
+            price: 7499,
+            price_type: "gold",
+            level: 48,
+            min_health: 0,
+            max_health: 0,
+            deploy_cost: 4,
+            min_damage: 98.1,
+            max_damage: 0
+        },
+        exo_pilot: {
+            price: 7999,
+            price_type: "gold",
+            level: 50,
+            min_health: 0,
+            max_health: 0,
+            deploy_cost: 4,
+            min_damage: 1056.3,
+            max_damage: 0
+        }
     }
 }
 
