@@ -467,6 +467,78 @@ var warfriends = {
                     shot_speed: 10
                 }
             },
+            grenade_launch: {
+                spitter: {
+                    price: 139,
+                    price_type: "gold",
+                    level: 1,
+                    min_damage: 133.3,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+                punisher: {
+                    price: 249,
+                    price_type: "gold",
+                    level: 1,
+                    min_damage: 209.3,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+                decimator: {
+                    price: 499,
+                    price_type: "gold",
+                    level: 1,
+                    min_damage: 351.4,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+                thunder: {
+                    price: 2469,
+                    price_type: "gold",
+                    level: 1,
+                    min_damage: 525.2,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+                fury: {
+                    price: 3049,
+                    price_type: "gold",
+                    level: 1,
+                    min_damage: 625.1,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+                judge: {
+                    price: 3599,
+                    price_type: "gold",
+                    level: 1,
+                    min_damage: 836.7,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+                desolator: {
+                    price: 4599,
+                    price_type: "gold",
+                    level: 48,
+                    min_damage: 993.4,
+                    max_damage: 0,
+                    accuracy: 100,
+                    rate_of_fire: 13.3,
+                    shot_speed: 0
+                },
+            },
             rocket_launch: {
                 gpr1: {
                     price: 89,
@@ -477,16 +549,6 @@ var warfriends = {
                     accuracy: 100,
                     rate_of_fire: 6,
                     shot_speed: 2
-                },
-                spitter: {
-                    price: 139,
-                    price_type: "gold",
-                    level: 1,
-                    min_damage: 133.3,
-                    max_damage: 0,
-                    accuracy: 100,
-                    rate_of_fire: 13.3,
-                    shot_speed: 0
                 },
                 boomstick: {
                     price: 179999,
