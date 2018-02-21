@@ -1,7 +1,7 @@
 var warfriends = {
     weapon: {
         primary: {
-            assault_rifles: {
+            "assault rifles": {
                 kavalier: {
                     price: 0,
                     price_type: "warbucks",
@@ -467,7 +467,7 @@ var warfriends = {
                     shot_speed: 10
                 }
             },
-            grenade_launch: {
+            "grenade launch": {
                 spitter: {
                     price: 139,
                     price_type: "gold",
@@ -539,7 +539,7 @@ var warfriends = {
                     shot_speed: 0
                 },
             },
-            rocket_launch: {
+            "rocket launch": {
                 gpr1: {
                     price: 89,
                     price_type: "gold",

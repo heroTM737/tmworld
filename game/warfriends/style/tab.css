@@ -10,8 +10,7 @@
     cursor: pointer;
     list-style-type: none;
     padding: 3px 20px;
-    text-transform: uppercase;
-    font-family: cursive;
+    text-transform: capitalize;
 }
 
 .Tabs .TabsItemList .TabsItem:hover {
