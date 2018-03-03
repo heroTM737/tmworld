@@ -877,7 +877,7 @@ var warfriends = {
             max_damage: 0
         },
         titan: {
-            price: 4999,
+            price: 3999,
             price_type: "gold",
             level: 34,
             min_health: 0,
@@ -887,7 +887,7 @@ var warfriends = {
             max_damage: 0
         },
         gunslinger: {
-            price: 4999,
+            price: 4499,
             price_type: "gold",
             level: 36,
             min_health: 0,
@@ -897,7 +897,7 @@ var warfriends = {
             max_damage: 0
         },
         warper: {
-            price: 5999,
+            price: 4999,
             price_type: "gold",
             level: 38,
             min_health: 0,
@@ -907,7 +907,7 @@ var warfriends = {
             max_damage: 0
         },
         rhino: {
-            price: 6499,
+            price: 5499,
             price_type: "gold",
             level: 40,
             min_health: 0,
@@ -917,7 +917,7 @@ var warfriends = {
             max_damage: 0
         },
         crusher: {
-            price: 7999,
+            price: 5999,
             price_type: "gold",
             level: 42,
             min_health: 0,
