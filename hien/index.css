@@ -32,3 +32,12 @@
 .page-contact.active {
     background: yellow;
 }
+.svgcontainer {
+    min-height: 30px;
+    background: black;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 100;
+    min-width: 30px;
+}
