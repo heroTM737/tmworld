@@ -4,11 +4,12 @@ let lineFunction = d3.line()
     .y(function (d) { return d.y; })
     .curve(d3.curveNatural);
 let svgWidth = 600;
-let svgHeight = 500;
-let svg = d3.select("#svgcontainer").append("svg")
+let svgHeight = 450;
+let svg = d3.select("#tree-container").append("svg")
     .attr('id', 'treesvg')
-    .attr('width', svgWidth)
-    .attr('height', svgHeight);
+    // .attr('width', svgWidth)
+    // .attr('height', svgHeight)
+    .attr('viewBox', '0 0 ' + svgWidth + ' ' + svgHeight);
 let map = {};
 $.get('data.json', function (result) {
     savedData = result;

@@ -1,14 +1,56 @@
-.page {
+body {
+    background: #d0d0d0;
+}
+
+body * {
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.spa {
+    overflow: hidden;
+}
+
+.spa-left {
+    float: left;
+    width: 550px;
+    height: 100%;
+    position: relative;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.spa-right {
+    float: left;
+    width: calc(100vw - 550px);
+    height: 100%;
+    background: #fff;
+    position: relative;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.home .spa-left {
     width: 100vw;
-    height: 100vh;
+}
+
+.home .spa-right {
+    width: 0;
+    max-width: 0;
+}
+
+.page {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 0 0;
+    transition: all 1s linear;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fff;
-    transition: all 1s linear;
     opacity: 0;
     font-size: 30px;
 }
@@ -18,26 +60,78 @@
 }
 
 .page-intro.active {
-    background: red;
+    /* background: red; */
 }
-.page-skill.active {
-    background: green;
-}
+
 .page-experience.active {
-    background: blue;
+    /* background: blue; */
 }
-.page-hobby.active {
-    background: pink;
+
+.page-interests {
+    position: relative;
 }
-.page-contact.active {
-    background: yellow;
-}
-.svgcontainer {
-    min-height: 30px;
-    background: black;
+
+.page-interests ul li {
+    width: 100px;
+    height: 100px;
     position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-    min-width: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0.7;
+    overflow: hidden;
+}
+
+.page-interests ul li.dancing {
+    background: #27adb0;
+    width: 100px;
+    height: 100px;
+    top: calc(50vh - 100px);
+    left: calc(50vw - 155px);
+    font-size: 18px;
+}
+
+.page-interests ul li.travel {
+    background: #268e8f;
+    width: 150px;
+    height: 150px;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.page-interests ul li.photo {
+    background: #2cc4c5;
+    width: 130px;
+    height: 130px;
+    top: calc(50vh - 19px);
+    left: calc(50vw - 172px);
+    font-size: 18px;
+}
+
+.page-interests ul li.drawing {
+    background: #2b5d5e;
+    width: 100px;
+    height: 100px;
+    top: calc(50vh - -54px);
+    left: calc(50vw - 69px);
+    font-size: 18px;
+}
+
+.page-interests ul li.sheep {
+    background: blue;
+    width: 100px;
+    height: 100px;
+    top: calc(50vh - 111px);
+    left: calc(50vw - -43px);
+    font-size: 16px;
+}
+
+.page-contact.active {
+    /* background: yellow; */
+}
+
+.page-contact .item {
+    margin: 10px 0;
 }

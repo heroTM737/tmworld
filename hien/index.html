@@ -11,43 +11,88 @@
     <link rel="stylesheet" type="text/css" href="css/navigation.css">
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/bird.css">
+    <link rel="stylesheet" type="text/css" href="css/tree.css">
+    <link rel="stylesheet" type="text/css" href="css/tm.css">
 
-    <script src="lib/d3.v5.min.js"></script>
+    <!-- Open+Sans -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-    <!-- javascript -->
-    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!-- fontawesome -->
+    <link rel="stylesheet" type="text/css" href="lib/fontawesome/5.0.13/css/fontawesome-all.min.css">
+
+    <!-- d3 -->
+    <script src="lib/d3/5.4.0/d3.min.js"></script>
+
+    <!-- jquery -->
+    <script src="lib/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
     <div class='navigation' id='navigation'>
-        <ul>
-            <li data-id='intro'>intro</li>
-            <li data-id='skill'>skill</li>
-            <li data-id='experience'>experience</li>
-            <li data-id='hobby'>hobby</li>
-            <li data-id='contact'>contact</li>
-        </ul>
+        <div data-id='home' class="nav-item item-home"><img class='ava' src='image/hien.jpg'/></div>
+        <div data-id='intro' class="nav-item item-intro">Intro</div>
+        <div data-id='experience' class="nav-item item-experience">Experience</div>
+        <div data-id='interests' class="nav-item item-interests">Interests</div>
+        <div data-id='contact' class="nav-item item-contact">Contact</div>
     </div>
-    <div class='page page-intro' id='intro'>intro</div>
-    <div class='page page-skill' id='skill'>skill</div>
-    <div class='page page-experience' id='experience'>experience</div>
-    <div class='page page-hobby' id='hobby'>hobby</div>
-    <div class='page page-contact' id='contact'>contact</div>
-    <div class="container">
-        <div class="bird-container bird-container--one">
-            <div class="bird bird--one"></div>
+    <div class='spa'>
+        <div class="spa-left">
+            <div class="container">
+                <div class="bird-container bird-container--one">
+                    <div class="bird bird--one"></div>
+                </div>
+                <div class="bird-container bird-container--two">
+                    <div class="bird bird--two"></div>
+                </div>
+                <div class="bird-container bird-container--three">
+                    <div class="bird bird--three"></div>
+                </div>
+                <div class="bird-container bird-container--four">
+                    <div class="bird bird--four"></div>
+                </div>
+            </div>
+            <div id='tree-container' class='tree-container'></div>
         </div>
-        <div class="bird-container bird-container--two">
-            <div class="bird bird--two"></div>
-        </div>
-        <div class="bird-container bird-container--three">
-            <div class="bird bird--three"></div>
-        </div>
-        <div class="bird-container bird-container--four">
-            <div class="bird bird--four"></div>
+        <div class="spa-right">
+            <div class='page page-intro' id='intro'>
+                Sinh ra nhỏ bé nhưng mơ ước vĩ đại
+            </div>
+            <div class='page page-skill' id='experience'>Experience</div>
+            <div class='page page-interests' id='interests'>
+                <ul>
+                    <li class='dancing'>Dancing</li>
+                    <li class='photo'>PhotoGraphy</li>
+                    <li class='drawing'>Drawing</li>
+                    <li class='sheep'>Sheep</li>
+                    <li class='travel'>Travel</li>
+                </ul>
+            </div>
+            <div class='page page-contact' id='contact'>
+                <div>
+                    <div class="item">
+                        <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        <label>Vũ (Nguyễn) Thu Hiền</label>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-birthday-cake" aria-hidden="true"></i>
+                        <label>December 25, 1992</label>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-phone-square" aria-hidden="true"></i>
+                        <label>(+84) 127 581 5584</label>
+                    </div>
+                    <div class="item">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                        <label>tientm.com/hien</label>
+                    </div>
+                    <div class="item">
+                        <i class="far fa-envelope"></i>
+                        <label>thuhienvu92@gmail.com</label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div id='svgcontainer' class='svgcontainer'></div>
     <script src="index.js"></script>
     <script src="js/tree.js"></script>
 </body>
