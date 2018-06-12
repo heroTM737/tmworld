@@ -30,6 +30,15 @@ body * {
     overflow: hidden;
 }
 
+@media only screen and (max-device-width: 600px) {
+    .spa-left {
+        width: 0;
+    }
+    .spa-right {
+        width: 100vw;
+    }
+}
+
 .home .spa-left {
     width: 100vw;
 }
@@ -48,11 +57,8 @@ body * {
     height: 100%;
     padding: 50px 0 0 0;
     transition: all 1s linear;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     opacity: 0;
-    font-size: 30px;
+    overflow: auto;
 }
 
 .page.active {
@@ -63,12 +69,14 @@ body * {
     /* background: red; */
 }
 
-.page-experience.active {
-    /* background: blue; */
+.page-skill {
+    padding: 100px 50px 50px 50px;
 }
 
-.page-interests {
+.page-interests .interest-container {
     position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .page-interests ul li {
@@ -88,8 +96,8 @@ body * {
     background: #27adb0;
     width: 100px;
     height: 100px;
-    top: calc(50vh - 100px);
-    left: calc(50vw - 155px);
+    top: calc(50% - 100px);
+    left: calc(50% - 155px);
     font-size: 18px;
 }
 
@@ -97,16 +105,16 @@ body * {
     background: #268e8f;
     width: 150px;
     height: 150px;
-    top: calc(50vh - 75px);
-    left: calc(50vw - 75px);
+    top: calc(50% - 75px);
+    left: calc(50% - 75px);
 }
 
 .page-interests ul li.photo {
     background: #2cc4c5;
     width: 130px;
     height: 130px;
-    top: calc(50vh - 19px);
-    left: calc(50vw - 172px);
+    top: calc(50% - 19px);
+    left: calc(50% - 172px);
     font-size: 18px;
 }
 
@@ -114,8 +122,8 @@ body * {
     background: #2b5d5e;
     width: 100px;
     height: 100px;
-    top: calc(50vh - -54px);
-    left: calc(50vw - 69px);
+    top: calc(50% - -54px);
+    left: calc(50% - 69px);
     font-size: 18px;
 }
 
@@ -123,13 +131,13 @@ body * {
     background: blue;
     width: 100px;
     height: 100px;
-    top: calc(50vh - 111px);
-    left: calc(50vw - -43px);
+    top: calc(50% - 111px);
+    left: calc(50% - -43px);
     font-size: 16px;
 }
 
-.page-contact.active {
-    /* background: yellow; */
+.page-contact {
+    font-size: 30px;
 }
 
 .page-contact .item {

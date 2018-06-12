@@ -12,6 +12,7 @@ $(document).ready(function () {
                     $('#navigation').removeClass('home');
                     $('.spa').removeClass('home');
                     activePage('intro');
+                    toSpring();
                 } else {
                     $('#navigation').addClass('home');
                     $('.spa').addClass('home');
@@ -46,13 +47,16 @@ $(document).ready(function () {
 });
 
 function activePage(id) {
-    if (id) {
-        $('#' + id).addClass('active');
-    }
     $('#navigation .nav-item').each(function (i, v) {
         var pageId = $(v).attr('data-id');
-        if (pageId != id) {
+        if (pageId == id) {
+            $('#' + pageId).addClass('active');
+            $('#' + pageId).css('z-index', 3);
+            $(v).addClass('active');
+        } else {
             $('#' + pageId).removeClass('active');
+            $('#' + pageId).css('z-index', 2);
+            $(v).removeClass('active');
         }
     });
 }

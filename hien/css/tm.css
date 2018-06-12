@@ -2,3 +2,18 @@
     width: 100vw;
     height: 100vh;
 }
+
+.flex {
+    display: flex;
+}
+
+.centerVH {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spreadWH {
+    width: 100%;
+    height: 100%;
+}
