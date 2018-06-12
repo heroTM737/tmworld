@@ -45,10 +45,14 @@
     cursor: pointer;
     font-size: 1em;
     position: fixed;
-    top: 0px;
+    top: 10px;
     right: 0px;
     font-family: 'Open Sans', sans-serif;
     z-index: 1000;
+}
+
+.nav-item.item-home {
+    top: 3px;
 }
 
 .nav-item img {
@@ -59,6 +63,8 @@
 .nav-item:hover {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     color: blue;
+    font-size: 2em;
+    /* top: 50px; */
 }
 
 /* normal */
@@ -84,9 +90,11 @@
 }
 
 /* home */
+
 .navigation.home .nav-item {
     font-size: 3em;
 }
+
 .navigation.home .nav-item.item-home {
     top: calc(50vh - 200px);
     right: calc(100vw - 400px);

@@ -8,10 +8,16 @@ $(document).ready(function () {
         var pageId = li.attr('data-id');
         if (pageId == 'home') {
             li.click(function () {
-                $('#navigation').toggleClass('home');
-                $('.spa').toggleClass('home');
+                if ($('#navigation').hasClass('home')) {
+                    $('#navigation').removeClass('home');
+                    $('.spa').removeClass('home');
+                    activePage('intro');
+                } else {
+                    $('#navigation').addClass('home');
+                    $('.spa').addClass('home');
+                    activePage(null);
+                }
             });
-
         } else {
             li.click(function () {
                 if ($('#navigation').hasClass('home')) {
@@ -40,13 +46,13 @@ $(document).ready(function () {
 });
 
 function activePage(id) {
-    $('#' + id).addClass('active');
+    if (id) {
+        $('#' + id).addClass('active');
+    }
     $('#navigation .nav-item').each(function (i, v) {
         var pageId = $(v).attr('data-id');
         if (pageId != id) {
             $('#' + pageId).removeClass('active');
         }
-
     });
-
 }
