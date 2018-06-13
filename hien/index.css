@@ -5,6 +5,8 @@ body {
 body * {
     font-family: 'Open Sans', sans-serif;
     transition: all 0.5s ease;
+    /* transition: all 10s ease; */
+    color: #444;
 }
 
 .spa {
@@ -16,7 +18,6 @@ body * {
     width: 550px;
     height: 100%;
     position: relative;
-    transition: all 0.5s ease;
     overflow: hidden;
 }
 
@@ -26,7 +27,6 @@ body * {
     height: 100%;
     background: #fff;
     position: relative;
-    transition: all 0.5s ease;
     overflow: hidden;
 }
 
@@ -65,81 +65,43 @@ body * {
     opacity: 1;
 }
 
-.page-intro.active {
-    /* background: red; */
+.greeting {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
 }
 
-.page-skill {
-    padding: 100px 50px 50px 50px;
-}
-
-.page-interests .interest-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-
-.page-interests ul li {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    opacity: 0.7;
-    overflow: hidden;
-}
-
-.page-interests ul li.dancing {
-    background: #27adb0;
-    width: 100px;
-    height: 100px;
-    top: calc(50% - 100px);
-    left: calc(50% - 155px);
-    font-size: 18px;
-}
-
-.page-interests ul li.travel {
-    background: #268e8f;
-    width: 150px;
-    height: 150px;
-    top: calc(50% - 75px);
-    left: calc(50% - 75px);
-}
-
-.page-interests ul li.photo {
-    background: #2cc4c5;
-    width: 130px;
-    height: 130px;
-    top: calc(50% - 19px);
-    left: calc(50% - 172px);
-    font-size: 18px;
-}
-
-.page-interests ul li.drawing {
-    background: #2b5d5e;
-    width: 100px;
-    height: 100px;
-    top: calc(50% - -54px);
-    left: calc(50% - 69px);
-    font-size: 18px;
-}
-
-.page-interests ul li.sheep {
-    background: blue;
-    width: 100px;
-    height: 100px;
-    top: calc(50% - 111px);
-    left: calc(50% - -43px);
-    font-size: 16px;
-}
-
-.page-contact {
-    font-size: 30px;
-}
-
-.page-contact .item {
+.greeting1 {
+    font-size: 1.5em;
     margin: 10px 0;
+}
+
+.greeting2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.greeting3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.greeting button {
+    border: none;
+    background: #F34452;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 250px;
+}
+
+.greeting button span {
+    margin-left: 20px;
+}
+
+.greeting button i {
+    margin-left: 20px;
 }

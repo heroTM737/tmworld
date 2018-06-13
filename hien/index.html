@@ -14,6 +14,10 @@
     <link rel="stylesheet" type="text/css" href="css/tree.css">
     <link rel="stylesheet" type="text/css" href="css/tm.css">
     <link rel="stylesheet" type="text/css" href="css/timeline.css">
+    <link rel="stylesheet" type="text/css" href="css/pageIntro.css">
+    <link rel="stylesheet" type="text/css" href="css/pageExperience.css">
+    <link rel="stylesheet" type="text/css" href="css/pageInterest.css">
+    <link rel="stylesheet" type="text/css" href="css/pageContact.css">
 
     <!-- Open+Sans -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -29,7 +33,27 @@
 </head>
 
 <body>
+    <div class="greeting">
+        <div class="greeting1">Hi, I'm</div>
+        <div class="greeting2">Nguyễn Thu Hiền</div>
+        <div class="greeting3">A Marketer</div>
+        <div>
+            <button>
+                <span>Download PDF</span>
+                <i class="fas fa-download"></i>
+            </button>
+        </div>
+    </div>
     <div class='navigation home' id='navigation'>
+        <div data-id='home' class="nav-item item-home">
+            <img class='ava' src='image/hien.jpg' />
+        </div>
+        <div data-id='intro' class="nav-item item-intro">Intro</div>
+        <div data-id='experience' class="nav-item item-experience">Experience</div>
+        <div data-id='interests' class="nav-item item-interests">Interests</div>
+        <div data-id='contact' class="nav-item item-contact">Contact</div>
+    </div>
+    <div class='navigation2 home' id='navigation2'>
         <div data-id='home' class="nav-item item-home">
             <img class='ava' src='image/hien.jpg' />
         </div>
@@ -58,9 +82,80 @@
         </div>
         <div class="spa-right">
             <div class='page page-intro' id='intro'>
-                Sinh ra nhỏ bé nhưng mơ ước con Cừu
+                <div class="brief">
+                    <div class="brief-text">
+                        <div class="name">Nguyễn Thu Hiền</div>
+                        <div class="brief-detail">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                            make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release
+                            of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
+                            software like Aldus PageMaker including versions of Lorem Ipsum.
+                            <br/>
+                            <br/> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+                            but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised
+                            in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                            with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </div>
+                    </div>
+                    <div class="brief-image">
+                        <img class='image-of-me' src='image/hien.jpg' />
+                    </div>
+                </div>
+                <div class='skill'>
+                    <div class="title">Skill</div>
+                    <div class="flex">
+                        <div class='percentage-container'>
+                            <div class="sub-title">Technical Skill</div>
+                            <div class='percentage-group'>
+                                <div>Photoshop</div>
+                                <div class="percentage">
+                                    <div class="percentageX percentage70"></div>
+                                </div>
+                            </div>
+                            <div class='percentage-group'>
+                                <div>Indesign</div>
+                                <div class="percentage">
+                                    <div class="percentageX percentage30"></div>
+                                </div>
+                            </div>
+                            <div class='percentage-group'>
+                                <div>Proshow</div>
+                                <div class="percentage">
+                                    <div class="percentageX percentage50"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="how-container">
+                            <div class="sub-title">Know How</div>
+                            <div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                                <div class="how-item">
+                                    <i class="fas fa-check"></i>Photograph</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <div class='page page-skill' id='experience'>
+                <div class="title">Experience</div>
                 <div class='timeline'>
                     <div class="timeline-block">
                         <div class="indicator indicator1"></div>
@@ -194,6 +289,79 @@
                             <ul>
                                 <li>Lead a team of 5 counselors to reach the monthly target numbers of customers </li>
                                 <li>Achieve the reward of the most excellent employee in 3 months</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">Education</div>
+                <div class='timeline'>
+                    <div class="timeline-block">
+                        <div class="indicator indicator1"></div>
+                        <div class="indicator indicator2"></div>
+                        <div class="flex">
+                            <div class="date">
+                                <div>
+                                    May
+                                    <span class="big">2015</span>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <div class="role">Short course Content Marketing </div>
+                                <div class="company">
+                                    Sage Academy
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-block">
+                        <div class="indicator indicator1"></div>
+                        <div class="indicator indicator2"></div>
+                        <div class="flex">
+                            <div class="date">
+                                <div>
+                                    May
+                                    <span class="big">2015</span>
+                                </div>
+                                <div>2011</div>
+                            </div>
+                            <div class="content">
+                                <div class="role">Student</div>
+                                <div class="company">
+                                    Foreign Trade University
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-block">
+                        <div class="indicator indicator1"></div>
+                        <div class="indicator indicator2"></div>
+                        <div class="flex">
+                            <div class="date">
+                                <div>
+                                    <span class="big">2010</span>
+                                </div>
+                                <div>2007</div>
+                            </div>
+                            <div class="content">
+                                <div class="role">Student</div>
+                                <div class="company">
+                                    High school for Gifted Students HNUE
+                                </div>
+                            </div>
+                        </div>
+                        <div class="detail">
+                            <ul>
+                                <li></li>
                             </ul>
                         </div>
                     </div>

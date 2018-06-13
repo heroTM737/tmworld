@@ -1,6 +1,11 @@
 $(document).ready(function () {
-    let lastActive = null;
-    $('#navigation .nav-item').each(function (i, v) {
+    bindAction('#navigation .nav-item');
+    bindAction('#navigation2 .nav-item');
+    
+});
+
+function bindAction(selector) {
+    $(selector).each(function (i, v) {
         var li = $(v);
         if (li.attr('class') && li.attr('class').includes('active')) {
             lastActive = li;
@@ -8,13 +13,15 @@ $(document).ready(function () {
         var pageId = li.attr('data-id');
         if (pageId == 'home') {
             li.click(function () {
+                toSpring();
                 if ($('#navigation').hasClass('home')) {
                     $('#navigation').removeClass('home');
+                    $('#navigation2').removeClass('home');
                     $('.spa').removeClass('home');
                     activePage('intro');
-                    toSpring();
                 } else {
                     $('#navigation').addClass('home');
+                    $('#navigation2').addClass('home');
                     $('.spa').addClass('home');
                     activePage(null);
                 }
@@ -23,13 +30,9 @@ $(document).ready(function () {
             li.click(function () {
                 if ($('#navigation').hasClass('home')) {
                     $('#navigation').removeClass('home');
+                    $('#navigation2').removeClass('home');
                     $('.spa').removeClass('home');
                 }
-                if (lastActive) {
-                    lastActive.removeClass('active');
-                }
-                li.addClass('active');
-                lastActive = li;
                 switch (pageId) {
                     case 'intro': toSpring(); break;
                     case 'experience': toSummer(); break;
@@ -43,8 +46,8 @@ $(document).ready(function () {
         if (i == 0) {
             $('#' + pageId).addClass('active');
         }
-    })
-});
+    });
+}
 
 function activePage(id) {
     $('#navigation .nav-item').each(function (i, v) {

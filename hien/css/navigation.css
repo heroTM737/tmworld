@@ -35,6 +35,12 @@
     z-index: 999;
     display: flex;
     justify-content: center;
+    opacity: 1;
+}
+
+.navigation.home {
+    opacity: 0;
+    background: rgba(241, 243, 246, 0);
 }
 
 @media only screen and (max-device-width: 600px) {
@@ -52,19 +58,6 @@
     height: 50px;
     display: flex;
     align-items: center;
-}
-
-.navigation.home {
-    display: block;
-    background: rgba(241, 243, 246, 0);
-}
-
-.navigation.home .nav-item {
-    height: auto;
-    position: fixed;
-    top: 10px;
-    right: 0px;
-    z-index: 1000;
 }
 
 .nav-item.item-home {
@@ -111,36 +104,49 @@
 
 /* home */
 
-.navigation.home .nav-item {
+.navigation2 {
+    opacity: 0;
+}
+
+.navigation2.home {
+    opacity: 1;
+}
+
+.navigation2 .nav-item {
     font-size: 3em;
+    height: auto;
+    position: fixed;
+    /* top: 10px;
+    right: 0px; */
+    z-index: 1000;
 }
 
-.navigation.home .nav-item.item-home {
-    top: calc(50vh - 200px);
-    right: calc(100vw - 400px);
+.navigation2 .nav-item.item-home {
+    top: calc(50vh - 300px);
+    right: calc(50vw + 200px);
 }
 
-.navigation.home .nav-item.item-intro {
+.navigation2 .nav-item.item-intro {
     top: calc(10vh - 25px);
     right: calc(50vw + 130px)
 }
 
-.navigation.home .nav-item.item-experience {
+.navigation2 .nav-item.item-experience {
     top: calc(30vh - 25px);
     right: calc(50vw - 130px)
 }
 
-.navigation.home .nav-item.item-interests {
+.navigation2 .nav-item.item-interests {
     top: calc(50vh - 25px);
     right: calc(50vw - 330px);
 }
 
-.navigation.home .nav-item.item-contact {
+.navigation2 .nav-item.item-contact {
     top: calc(20vh - 25px);
     right: calc(50vw - 330px);
 }
 
-.navigation.home img {
+.navigation2 img {
     height: 400px;
 }
 
