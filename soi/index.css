@@ -17,20 +17,12 @@ body {
     width: calc(100% + 50px);
     height: calc(100% + 50px);
     transition: all 1s linear;
+    display: flex;
+    justify-content: center;
 }
 
-@media all and (orientation:landscape) {
-    .hover-content img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media all and (orientation:portrait) {
-    .hover-content img {
-        width: auto;
-        height: 100%;
-    }
+.hover-content img {
+    height: calc(100% + 20px);
 }
 
 .timer {
