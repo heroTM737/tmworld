@@ -210,6 +210,10 @@ a:hover {
     color: #53a2a6;
 }
 
+#history .time .timedes .timedes-content {
+    padding-left: 20px;
+}
+
 #history .time .timedes .timedestitlesmall {
     color: #0c7a88;
 }
