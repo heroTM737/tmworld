@@ -1,13 +1,15 @@
+var selector = $('.content-container');
 $(function () {
     createTabs();
 
-    $(window).scroll(function () {
+    selector.scroll(function () {
         //remove all active
         $("#menu li").children().removeClass("active");
 
         //active current id
-        var scroll = $(window).scrollTop();
-        var wh = $(window).height();
+        var scroll = selector.scrollTop();
+        var wh = selector.height();
+        console.log(scroll, wh);
         var index = parseInt(scroll / wh);
         $("#menu li").children().eq(index).addClass("active");
     });
