@@ -6,12 +6,18 @@ html, body {
     display: none;
 }
 
+.content-container {
+    background-image: url(./image/background/main.jpg);
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+}
+
 .section {
     height: 100vh;
     box-sizing: border-box;
     color: #fff;
     position: relative;
-    background-image: url(./image/background/main.jpg);
 }
 
 .section * {
