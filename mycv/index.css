@@ -1,5 +1,6 @@
-html, body {
-    overflow-x: hidden; 
+html,
+body {
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -27,7 +28,6 @@ html, body {
 a:hover {
     text-decoration: none;
 }
-
 
 /* menu */
 
@@ -68,7 +68,6 @@ a:hover {
     cursor: pointer;
 }
 
-
 /* me */
 
 #me {
@@ -101,12 +100,10 @@ a:hover {
         padding: 150px 0px 0px 20px;
         align-items: baseline;
     }
-
     #me .myimage {
         height: 80vh;
     }
 }
-
 
 /* skill */
 
@@ -136,7 +133,6 @@ a:hover {
     background-image: url(./image/simple.png);
 }
 
-
 /* history */
 
 #history .timeContainer {
@@ -144,6 +140,7 @@ a:hover {
     flex-direction: row;
     justify-content: center;
 }
+
 @media screen and (max-width: 1200px) {
     #history .timeContainer {
         transform: scale(0.8);
@@ -233,14 +230,12 @@ a:hover {
     border-right: none;
 }
 
-
 /* interesting */
 
 #interesting img {
     max-height: 80%;
     max-width: 90%;
 }
-
 
 /* find me */
 

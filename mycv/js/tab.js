@@ -10,6 +10,8 @@ function createTabs() {
         });
 
         function openTab(id) {
+            $(".tabs ul li").removeClass('active');
+            $(".tabs ul li[data-id=" + id + "]").addClass('active');
             $(tabContainer).find(".tab").each(function (tabIndex, tab) {
                 if ($(tab).attr("data-id") == id) {
                     $(tab).css("display", "flex");
