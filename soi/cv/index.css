@@ -1,0 +1,107 @@
+body {
+    background: #d0d0d0;
+}
+
+body * {
+    font-family: 'Open Sans', sans-serif;
+    transition: all 0.5s ease;
+    /* transition: all 10s ease; */
+    color: #444;
+}
+
+.spa {
+    overflow: hidden;
+}
+
+.spa-left {
+    float: left;
+    width: 550px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.spa-right {
+    float: left;
+    width: calc(100vw - 550px);
+    height: 100%;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+}
+
+@media only screen and (max-device-width: 600px) {
+    .spa-left {
+        width: 0;
+    }
+    .spa-right {
+        width: 100vw;
+    }
+}
+
+.home .spa-left {
+    width: 100vw;
+}
+
+.home .spa-right {
+    width: 0;
+    max-width: 0;
+}
+
+.page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0 0 0;
+    transition: all 1s linear;
+    opacity: 0;
+    overflow: auto;
+}
+
+.page.active {
+    opacity: 1;
+}
+
+.greeting {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.greeting1 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.greeting2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.greeting3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.greeting button {
+    border: none;
+    background: #F34452;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 250px;
+}
+
+.greeting button span {
+    margin-left: 20px;
+}
+
+.greeting button i {
+    margin-left: 20px;
+}
