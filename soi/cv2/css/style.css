@@ -282,7 +282,8 @@ strong, small {
 }
 
 .light .home {
-   background: url(../images/bg-light.jpg) #f5f5f5; 
+   /* background: url(../images/bg-light.jpg) #f5f5f5;  */
+   background: url(../images/bg.jpg) #f5f5f5; 
    background-size: cover;
 }
 
