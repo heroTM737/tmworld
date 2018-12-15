@@ -6,3 +6,29 @@
 button {
     margin: 5px;
 }
+
+.card {
+    margin: 10px;
+}
+
+.rgb-hex-conversion .row {
+    position: relative;
+}
+
+.rgb-hex-conversion span {
+    position: absolute;
+    top: 10px;
+    left: calc(100% - 50px);
+}
+
+.rgb-hex-conversion span.red {
+    color: red
+}
+
+.rgb-hex-conversion span.green {
+    color: green
+}
+
+.rgb-hex-conversion span.blue {
+    color: blue
+}

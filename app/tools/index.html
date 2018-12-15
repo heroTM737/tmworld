@@ -5,20 +5,12 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <title>TM's tools</title>
     <link rel="shortcut icon" href="../../image/icon/tool_2.png" />
-    <!-- tm -->
-    <link rel="stylesheet" type="text/css" href="../../lib/tm/tm.css">
 
     <!-- jquery -->
     <script src="../../lib/jquery/jquery-3.1.0.min.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/3.3.7/css/bootstrap.min.css">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="../../lib/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" type="text/css" href="../../lib/bootstrap/4.1.3/css/bootstrap.min.css">
 
     <!-- default -->
     <script src="index.js"></script>
@@ -27,97 +19,93 @@
 
 <body>
     <div class="box-list">
-        <div class="box">
-            <div class="box-header box-title">RGB - Hex conversion</div>
-            <div class="box-body">
+        <div class="card rgb-hex-conversion">
+            <div class="card-body">
+                <h5 class="card-title">RGB - Hex conversion</h5>
                 <div class="row">
                     <div class="col-lg-5">
                         <div>
                             <div class="row">
-                                <div class="col-lg-4">red</div>
-                                <div class="col-lg-8">
-                                    <input id="red" type="text" placeholder="red" />
-                                </div>
+                                <input id="red" type="text" class="form-control red" placeholder="red" />
+                                <span class="red">red</span>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4">green</div>
-                                <div class="col-lg-8">
-                                    <input id="green" type="text" placeholder="green" />
-                                </div>
+                                <input id="green" type="text" class="form-control" placeholder="green" />
+                                <span class="green">green</span>
                             </div>
                             <div class="row">
-                                <div class="col-lg-4">blue</div>
-                                <div class="col-lg-8">
-                                    <input id="blue" type="text" placeholder="blue" />
-                                </div>
+                                <input id="blue" type="text" class="form-control" placeholder="blue" />
+                                <span class="blue">blue</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 text-center">
                         <div>
-                            <button onclick="convertRGB2Hex()"> rgb2hex =&gt </button>
+                            <button class="btn btn-primary" onclick="convertRGB2Hex()"> rgb2hex =&gt </button>
                         </div>
                         <div>
-                            <button onclick="convertHex2RGB()"> &lt= hex2rgb </button>
+                            <button class="btn btn-primary" onclick="convertHex2RGB()"> &lt= hex2rgb </button>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <div>hex</div>
-                        <div>
-                            <label style="width:5px">#</label>
-                            <input id="hex" type="text" placeholder="hex" />
+                        <div class="row">
+                            <input class="form-control" id="hex" type="text" placeholder="hex" />
+                            <span class="blue">no #</span>
                         </div>
-                        <div>
-                            <input id="hexSharp" type="text" placeholder="hex with sharp" />
+                        <div class="row">
+                            <input class="form-control" id="hexSharp" type="text" placeholder="hex with sharp" />
+                            <span class="blue">with #</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="box">
-            <div class="box-header box-title">HTML Template</div>
-            <div class="box-body">
-                <xmp>
-                    <!DOCTYPE html>
-                    <html>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">HTML Template</h5>
+                <div class="">
+                    <xmp>
+                        <!DOCTYPE html>
+                        <html>
 
-                    <head>
-                        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-                        <title>Page title here</title>
-                        <link rel="shortcut icon" href="favicon.png" />
+                        <head>
+                            <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+                            <title>Page title here</title>
+                            <link rel="shortcut icon" href="favicon.png" />
 
-                        <!-- style -->
-                        <link rel="stylesheet" type="text/css" href="index.css">
+                            <!-- style -->
+                            <link rel="stylesheet" type="text/css" href="index.css">
 
-                        <!-- javascript -->
-                        <script src="index.js"></script>
-                    </head>
+                            <!-- javascript -->
+                            <script src="index.js"></script>
+                        </head>
 
-                    <body>
-                        <div></div>
-                    </body>
+                        <body>
+                            <div></div>
+                        </body>
 
-                    </html>
-                </xmp>
+                        </html>
+                    </xmp>
+                </div>
             </div>
         </div>
-        <div class="box">
-            <div class="box-header box-title">HTML Entities</div>
-            <div class="box-body">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">HTML Entities</h5>
                 <div class="row">
                     <div class="col-lg-5">
-                        <textarea id="HTMLDecodedText"></textarea>
+                        <textarea class="form-control" id="HTMLDecodedText"></textarea>
                     </div>
-                    <div class="col-lg-2">
+                    <div class="col-lg-2 text-center">
                         <div>
-                            <button onclick="doEncodeHTMLEntities()"> encode =&gt; </button>
+                            <button class="btn btn-primary" onclick="doEncodeHTMLEntities()"> encode =&gt; </button>
                         </div>
                         <div>
-                            <button onclick="doDecodeHTMLEntities()"> &lt;= decode </button>
+                            <button class="btn btn-primary" onclick="doDecodeHTMLEntities()"> &lt;= decode </button>
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <textarea id="HTMLEncodedText"></textarea>
+                        <textarea class="form-control" id="HTMLEncodedText"></textarea>
                     </div>
                 </div>
             </div>
