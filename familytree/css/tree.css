@@ -1,0 +1,20 @@
+.link {
+    fill: none;
+    stroke: #99ccff;
+}
+
+text {
+    fill: #fff;
+}
+
+.node circle {
+    stroke: #ffd042;
+    stroke-width:3px;
+    fill: #fff;
+}
+.node .name {
+    fill: #fff;
+}
+.node .shortname {
+    fill: #000;
+}
