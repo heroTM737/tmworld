@@ -9,6 +9,7 @@ body {
 
 .content-container {
     background-image: url(./image/background/main.jpg);
+    /* background-image: url(./image/Tiencv-background.jpg); */
     width: 100vw;
     height: 100vh;
     overflow: scroll;
@@ -27,6 +28,10 @@ body {
 
 a:hover {
     text-decoration: none;
+}
+
+.timedes-content ul li {
+    list-style-type: circle;
 }
 
 /* menu */
