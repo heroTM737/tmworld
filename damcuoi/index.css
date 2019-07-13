@@ -2,24 +2,16 @@ body {
     font-family: 'Sriracha', cursive;
 }
 
-#container::-webkit-scrollbar {
+/* #container::-webkit-scrollbar {
     display: none;
-}
+} */
 
 body {
     margin: 0;
     background: url(./img/bg.jpg)
 }
 
-#container {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden auto;
-}
-
 .page {
-    width: 100vw;
-    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -29,10 +21,6 @@ body {
 .box {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     padding: 5px;
-}
-
-.page0 {
-    position: relative;
 }
 
 .page0 img.cover {

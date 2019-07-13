@@ -23,6 +23,7 @@ imgList.forEach(item => {
     item.w = Math.random() > 0.5 ? 2 : 1;
     item.h = Math.random() > 0.5 ? 2 : 1;
 });
+imgList = [];
 function nextPage() {
     if (activePage < 3) {
         return activePage + 1;
@@ -37,32 +38,32 @@ function backPage() {
 }
 
 var lastScrollTop = 0;
-document.getElementById("container").addEventListener("wheel", function (event) {
-    event.preventDefault();
+// document.getElementById("container").addEventListener("wheel", function (event) {
+//     event.preventDefault();
 
-    // if (performNext) {
-    //     var st = $(this).scrollTop();
-    //     if (st > lastScrollTop) {
-    //         goToId(nextPage());
-    //     }
-    //     else if (st == lastScrollTop) {
-    //         //do nothing 
-    //         //In IE this is an important condition because there seems to be some instances where the last scrollTop is equal to the new one
-    //     }
-    //     else {
-    //         goToId(backPage());
-    //     }
-    //     lastScrollTop = st;
-    // }
+//     // if (performNext) {
+//     //     var st = $(this).scrollTop();
+//     //     if (st > lastScrollTop) {
+//     //         goToId(nextPage());
+//     //     }
+//     //     else if (st == lastScrollTop) {
+//     //         //do nothing 
+//     //         //In IE this is an important condition because there seems to be some instances where the last scrollTop is equal to the new one
+//     //     }
+//     //     else {
+//     //         goToId(backPage());
+//     //     }
+//     //     lastScrollTop = st;
+//     // }
 
-    if (performNext) {
-        if (event.deltaY > 0) {
-            goToId(nextPage());
-        } else if (event.deltaY < 0) {
-            goToId(backPage());
-        }
-    }
-});
+//     if (performNext) {
+//         if (event.deltaY > 0) {
+//             goToId(nextPage());
+//         } else if (event.deltaY < 0) {
+//             goToId(backPage());
+//         }
+//     }
+// });
 
 function goToId(nextPage) {
     if (nextPage !== activePage) {
