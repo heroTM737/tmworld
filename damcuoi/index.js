@@ -63,7 +63,7 @@ let imgCount = 0;
 const countFn = () => {
     imgCount++;
     if (imgCount === imageList.length) {
-        imgLoaded();
+        setTimeout(imgLoaded, 1000);
     }
 };
 $(document).ready(() => {
@@ -115,7 +115,6 @@ function imgLoaded() {
         }
         updateStyle();
     }, 0);
-
 }
 
 function next() {

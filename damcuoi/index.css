@@ -46,10 +46,17 @@ body {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #fff;
+    background: #d65353;
     z-index: 1000;
     opacity: 1;
     transition: all ease 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading img {
+    max-width: 10vw;
 }
 
 @keyframes play {
