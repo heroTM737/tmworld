@@ -2,11 +2,12 @@ let active = 1;
 const ratioWH = 1.4;
 
 const imageList = [
-    'image/couple.jpg',
+    'image/BTQ_3032.jpg',
     'image/Page 1.jpg',
     'image/page 2 - bome.jpg',
-    'image/hoa.jpg',
-    'image/hoa.jpg',
+    'image/BTQ_3173.jpg',
+    'image/BTQ_3210.jpg',
+    'image/couple.jpg',
 ];
 
 function getPreferSize() {
@@ -142,7 +143,7 @@ function updateStyle() {
     for (let i = 0; i < active; i++) {
         $(".page-" + i).css(leftStyle);
     }
-    for (let i = active + 1; i < 5; i++) {
+    for (let i = active + 1; i < imageList.length; i++) {
         $(".page-" + i).css(rightStyle);
     }
 }
