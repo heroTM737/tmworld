@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Tiến &hearts; Hiền</title>
+    <link rel="shortcut icon" href="favicon.png" />
+
+    <link href="https://fonts.googleapis.com/css?family=Charmonman|Sriracha&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/loinhan.css">
+    <script src="jquery-3.4.1.js"></script>
+
+</head>
+
+<body>
+    <div class="layer-container" id="container">
+        <div class="layer layer0 page page0" id="page0">
+            <!-- <img src="./img/IMG_20190414_102515.jpg" alt="tien va hien nam ben nhau" class="cover"> -->
+            <div class="codauchure" id="textRotate">Tiến & Hiền</div>
+        </div>
+        <div class="layer layer1 page page1" id="page1">
+            <div class="box">
+                <div>Tòa nhà 21</div>
+                <div>11 giờ 00 thứ 7 ngày 23 tháng 11 năm 2019</div>
+                <div><a href="https://www.google.com/maps" target="_blank">xem bản đồ</a></div>
+            </div>
+        </div>
+        <div class="layer layer2 page page2" id="page2">
+            <div class="gallery" id="gallery">
+            </div>
+        </div>
+        <div class="layer layer3 page page3 page-loi-nhan" id="pageLoiNhan">
+            <div id="messageGroup" class="message-group"></div>
+            <div id="msgEditor" class="message-container msg-editor">
+                <div class="content">
+                    <input type="text" placeholder="Người gửi" id="msgSender" />
+                    <textarea placeholder="Nội dung" id="msgContent"></textarea>
+                    <div style="display: flex;justify-content: space-between">
+                        <button onclick="cancelAddMessage()">Để sau</button>
+                        <button onclick="addMessage()">Gửi lời nhắn</button>
+                    </div>
+                </div>
+            </div>
+            <div class="show-msg-wapper">
+                    <button class="showAddMessageBtn" onclick="showAddMessage()">Gửi lời nhắn</button>
+            </div>
+        </div>
+    </div>
+    <div id="menu-container" class="menu-container">
+        <div id="menu0" class="menu-item active" onclick="goToId(0)">Tiến & Hiền</div>
+        <div id="menu1" class="menu-item" onclick="goToId(1)">Thời gian</div>
+        <div id="menu2" class="menu-item" onclick="goToId(2)">Thư viện</div>
+        <div id="menu3" class="menu-item" onclick="goToId(3)">Lời nhắn</div>
+    </div>
+    <div id="imageViewer" class="image-viewer">
+        <button class="nav" onclick="backImage()"></button>
+        <button class="nav" onclick="nextImage()"></button>
+        <div onclick="closeImage()" class="close">&cross;</div>
+        <img id="activeImg" src="./img/gallery/IMG_20190414_170429.jpg" alt="">
+    </div>
+    <!-- javascript -->
+    <script src="index.js"></script>
+    <script src="js/layout.js"></script>
+</body>
+
+</html>
