@@ -118,7 +118,7 @@ function imgLoaded() {
 }
 
 function next() {
-    if (active < 4) {
+    if (active < imageList.length) {
         active++;
         updateStyle()
     }
