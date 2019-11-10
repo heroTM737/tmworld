@@ -56,7 +56,7 @@ body {
 }
 
 .loading img {
-    width: 10vw;
+    width: 80vw;
 }
 
 @keyframes play {
