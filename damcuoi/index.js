@@ -7,6 +7,7 @@ const imageList = [
     'image/page 2 - bome.jpg',
     'image/BTQ_3173.jpg',
     'image/BTQ_3210.jpg',
+    'image/BTQ_3215.jpg',
     'image/couple.jpg',
 ];
 
