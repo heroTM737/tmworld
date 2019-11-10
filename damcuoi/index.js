@@ -1,10 +1,17 @@
 let active = 1;
 const ratioWH = 1.4;
 
+const imageList = [
+    'image/couple.jpg',
+    'image/Page 1.jpg',
+    'image/page 2 - bome.jpg',
+    'image/hoa.jpg',
+    'image/hoa.jpg',
+];
+
 function getPreferSize() {
     let w = window.innerWidth;
     let h = window.innerHeight;
-    console.log(w, h);
     let width = 0;
     let height = 0;
     if (h / w > ratioWH) {
@@ -51,34 +58,28 @@ function getRightStyle() {
         opacity: 0.7
     }
 }
-
-$(document).ready(() => {
-    preferSize = getPreferSize();
-    for (let i = 0; i < 5; i++) {
-        $(".page" + i).css({
-            "z-index": 100 - i,
-            width: `${preferSize.width}px`,
-            height: `${preferSize.height}px`
-        });
+let imgCount = 0;
+const countFn = () => {
+    imgCount++;
+    if (imgCount === imageList.length) {
+        imgLoaded();
     }
-    setTimeout(() => {
-        $('#loading').css({
-            opacity: '0'
-        });
-        for (let i = 0; i < 5; i++) {
-            $(".page" + i).css({
-                "transition": "all ease 2s",
-            });
-        }
-        setTimeout(() => {
-            updateStyle();
-        }, 200);
-    }, 0);
-    let hammertime = new Hammer(document.body);
-    hammertime.on("swiperight", () => {
+};
+$(document).ready(() => {
+    for (let i = 0; i < imageList.length; i++) {
+        $('body').append(`
+            <div class="page page-${i}">
+                <div class="page-content page-content-${i}">
+                    <img src="${imageList[i]}" onload="countFn()">
+                </div>
+            </div>
+        `);
+    }
+    let hammerTime = new Hammer(document.body);
+    hammerTime.on("swiperight", () => {
         back();
     });
-    hammertime.on("swipeleft", () => {
+    hammerTime.on("swipeleft", () => {
         next();
     });
 
@@ -92,6 +93,29 @@ $(document).ready(() => {
 
     window.onresize = updateStyle;
 });
+
+function imgLoaded() {
+    preferSize = getPreferSize();
+    for (let i = 0; i < 5; i++) {
+        $(".page-" + i).css({
+            "z-index": 100 - i,
+            width: `${preferSize.width}px`,
+            height: `${preferSize.height}px`
+        });
+    }
+    setTimeout(() => {
+        $('#loading').css({
+            opacity: '0'
+        });
+        for (let i = 0; i < 5; i++) {
+            $(".page-" + i).css({
+                "transition": "all ease 2s",
+            });
+        }
+        updateStyle();
+    }, 0);
+
+}
 
 function next() {
     if (active < 4) {
@@ -114,11 +138,11 @@ function updateStyle() {
     let centerStyle = getCenterStyle();
     let rightStyle = getRightStyle();
 
-    $(".page" + active).css(centerStyle);
+    $(".page-" + active).css(centerStyle);
     for (let i = 0; i < active; i++) {
-        $(".page" + i).css(leftStyle);
+        $(".page-" + i).css(leftStyle);
     }
     for (let i = active + 1; i < 5; i++) {
-        $(".page" + i).css(rightStyle);
+        $(".page-" + i).css(rightStyle);
     }
 }
