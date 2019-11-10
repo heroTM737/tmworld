@@ -108,7 +108,7 @@ function imgLoaded() {
         $('#loading').css({
             opacity: '0'
         });
-        for (let i = 0; i < 5; i++) {
+        for (let i = 0; i < imageList.length; i++) {
             $(".page-" + i).css({
                 "transition": "all ease 2s",
             });
