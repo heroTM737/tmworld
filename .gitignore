@@ -4,5 +4,4 @@
 **/.DS_Store
 
 # IntelliJ
-*.iml
-/.idea
+.idea
