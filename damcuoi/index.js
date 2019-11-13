@@ -2,12 +2,13 @@ let active = 1;
 const ratioWH = 1.4;
 
 const imageList = [
-    'image/BTQ_3032.jpg',
+    'image/BTQ_2903.jpg',
     'image/Page 1.jpg',
     'image/page 2 - O2 Mali.jpg',
     'image/BTQ_3173.jpg',
     'image/BTQ_3210.jpg',
     'image/BTQ_3215.jpg',
+    'image/BTQ_3032.jpg',
     'image/couple.jpg',
 ];
 
