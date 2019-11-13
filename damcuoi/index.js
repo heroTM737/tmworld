@@ -8,8 +8,7 @@ const imageList = [
     'image/BTQ_3173.jpg',
     'image/BTQ_3210.jpg',
     'image/BTQ_3215.jpg',
-    'image/BTQ_3032.jpg',
-    'image/couple.jpg',
+    'image/BTQ_3032.jpg'
 ];
 
 function getPreferSize() {
