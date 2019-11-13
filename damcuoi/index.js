@@ -4,7 +4,7 @@ const ratioWH = 1.4;
 const imageList = [
     'image/BTQ_3032.jpg',
     'image/Page 1.jpg',
-    'image/page 2 - bome.jpg',
+    'image/page 2 - O2 Mali.jpg',
     'image/BTQ_3173.jpg',
     'image/BTQ_3210.jpg',
     'image/BTQ_3215.jpg',
@@ -70,7 +70,7 @@ const countFn = () => {
 $(document).ready(() => {
     for (let i = 0; i < imageList.length; i++) {
         $('body').append(`
-            <div class="page page-${i}">
+            <div class="page page-${i}" onclick="pageClick(${i})">
                 <div class="page-content page-content-${i}">
                     <img src="${imageList[i]}" onload="countFn()">
                 </div>
@@ -106,9 +106,7 @@ function imgLoaded() {
         });
     }
     setTimeout(() => {
-        $('#loading').css({
-            opacity: '0'
-        });
+        $('#loading').remove();
         for (let i = 0; i < imageList.length; i++) {
             $(".page-" + i).css({
                 "transition": "all ease 2s",
@@ -129,6 +127,14 @@ function back() {
     if (active > 0) {
         active--;
         updateStyle()
+    }
+}
+
+function pageClick (pageIndex) {
+    if (pageIndex < active) {
+        back();
+    } else if (pageIndex > active) {
+        next();
     }
 }
 
