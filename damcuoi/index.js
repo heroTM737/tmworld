@@ -3,8 +3,8 @@ const ratioWH = 1.4;
 
 const imageList = [
     'image/BTQ_2903.jpg',
-    'image/Page 1.jpg',
-    'image/page 2 - O2 Mali.jpg',
+    'image/thiep 1.jpg',
+    'image/thiep 2.jpg',
     'image/BTQ_3173.jpg',
     'image/BTQ_3210.jpg',
     'image/BTQ_3215.jpg',
