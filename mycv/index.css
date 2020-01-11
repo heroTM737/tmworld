@@ -153,15 +153,22 @@ a:hover {
 }
 
 #history .certificate {
-    background-image: url(./image/certificate_50x50.png);
-    background-repeat: no-repeat;
-    background-size: 50px 50px;
-    padding-left: 55px;
     position: absolute;
     top: 100px;
     left: 94px;
     height: 50px;
     font-family: 'Roboto', sans-serif;
+}
+
+#history .certificate .row {
+    display: flex;
+    align-items: center;
+}
+
+#history .certificate img {
+    height: 40px;
+    background: rgba(0,0,0,0.5);
+    margin-right: 10px;
 }
 
 #history .certificate div div {
