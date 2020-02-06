@@ -1,4 +1,4 @@
-var treeData = {
+var hienFatherTreeData = {
     id: "tien",
     name: "Vũ Nguyên Ngọc - Vũ Thị Vui",
     children: [
@@ -61,7 +61,7 @@ var treeData = {
     ]
 }
 
-var motherTreeData = {
+var hienMotherTreeData = {
     name: "Nguyễn Thế Vinh - Vũ Thị Vy",
     children: [
         {
@@ -412,7 +412,7 @@ var tienMotherTreeData = {
                 },
             ]
         },
-        
+
         {
             name: "Tân - Tiến",
             children: [
@@ -434,8 +434,9 @@ var tienMotherTreeData = {
         },
     ]
 }
-createTree(treeData, "noi");
-createTree(motherTreeData, "ngoai");
+
+createTree(hienFatherTreeData, "hien-noi");
+createTree(hienMotherTreeData, "hien-ngoai");
 createTree(tienFatherTreeData, "tien-noi");
 createTree(tienMotherTreeData, "tien-ngoai");
 
