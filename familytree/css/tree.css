@@ -10,7 +10,7 @@ text {
 .node circle {
     stroke: #ffd042;
     stroke-width:3px;
-    fill: #fff;
+    fill: #ffd042;
 }
 .node .name {
     fill: #fff;
@@ -19,10 +19,16 @@ text {
     fill: #000;
 }
 
+* {
+    font-family: 'Roboto', sans-serif !important;
+}
+
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
     font-weight: bold;
 }
 
-* {
-    font-family: 'Roboto', sans-serif !important;
+.tree-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

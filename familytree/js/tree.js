@@ -60,7 +60,6 @@ var hienFatherTreeData = {
         },
     ]
 }
-
 var hienMotherTreeData = {
     name: "Nguyễn Thế Vinh - Vũ Thị Vy",
     children: [
@@ -139,7 +138,6 @@ var hienMotherTreeData = {
         },
     ]
 }
-
 var tienFatherTreeData = {
     name: "Nguyễn Lợi Liêm - Nguyễn Thị Quyết",
     children: [
@@ -206,6 +204,9 @@ var tienFatherTreeData = {
                         {
                             name: "? (báo)"
                         },
+                        {
+                            name: "? (bumbee)"
+                        }
                     ]
                 },
             ]
@@ -255,7 +256,7 @@ var tienFatherTreeData = {
                     ]
                 },
                 {
-                    name: "Nguyễn Xuân Tiến"
+                    name: "Nguyễn Xuân Tiến - Vũ Thu Hiền"
                 },
             ]
         },
@@ -329,7 +330,12 @@ var tienMotherTreeData = {
                     ]
                 },
                 {
-                    name: "Hải - Đào"
+                    name: "Hải - Đào",
+                    children: [
+                        {
+                            name: "?"
+                        }
+                    ]
                 },
             ]
         },
@@ -348,7 +354,7 @@ var tienMotherTreeData = {
                     ]
                 },
                 {
-                    name: "Nguyễn Xuân Tiến"
+                    name: "Nguyễn Xuân Tiến - Vũ Thu Hiền"
                 },
             ]
         },
@@ -364,7 +370,12 @@ var tienMotherTreeData = {
             name: "Lộc - Thái",
             children: [
                 {
-                    name: "Kiên - Lan Anh"
+                    name: "Kiên - Lan Anh",
+                    children: [
+                        {
+                            name: "?"
+                        }
+                    ]
                 },
                 {
                     name: "Quỳnh - Tùng",
@@ -430,6 +441,9 @@ var tienMotherTreeData = {
                 {
                     name: "Nghĩa"
                 },
+                {
+                    name: "?"
+                }
             ]
         },
     ]
@@ -443,7 +457,7 @@ createTree(tienMotherTreeData, "tien-ngoai");
 function createTree(data, containerid) {
     var margin = { top: 20, right: 120, bottom: 20, left: 120 },
         width = 800 - margin.right - margin.left,
-        height = 800 - margin.top - margin.bottom;
+        height = window.screen.height - 120 - margin.top - margin.bottom;
 
     var i = 0,
         duration = 750,

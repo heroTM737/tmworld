@@ -27,31 +27,37 @@
 <body>
     <ul class="nav nav-tabs" id="myTab" role="tablist" style="justify-content: center">
         <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#hien-noi" role="tab" aria-controls="home"
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tab0" role="tab" aria-controls="home"
                aria-selected="true">Hiền Nội</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#hien-ngoai" role="tab" aria-controls="profile"
+            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="profile"
                aria-selected="false">Hiền Ngoại</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tien-noi" role="tab" aria-controls="contact"
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="contact"
                aria-selected="false">Tiến Nội</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tien-ngoai" role="tab" aria-controls="contact"
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="contact"
                aria-selected="false">Tiến Ngoại</a>
         </li>
     </ul>
     <div class="tab-content" id="myTabContent">
-        <div class="tab-pane fade show active" id="hien-noi" role="tabpanel" aria-labelledby="home-tab">...</div>
-        <div class="tab-pane fade" id="hien-ngoai" role="tabpanel" aria-labelledby="profile-tab">...</div>
-        <div class="tab-pane fade" id="tien-noi" role="tabpanel" aria-labelledby="contact-tab">...</div>
-        <div class="tab-pane fade" id="tien-ngoai" role="tabpanel" aria-labelledby="contact-tab">...</div>
+        <div class="tab-pane fade show active" id="tab0" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tree-container" id="hien-noi"></div>
+        </div>
+        <div class="tab-pane fade" id="tab1" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tree-container" id="hien-ngoai"></div>
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tree-container" id="tien-noi"></div>
+        </div>
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="tree-container" id="tien-ngoai"></div>
+        </div>
     </div>
     <!--script-->
-    <script src="js/bubble.js"></script>
     <script src="js/tree.js"></script>
-    <script src="js/tab.js"></script>
     <script src="index.js"></script>
 </body>
